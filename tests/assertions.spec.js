@@ -33,6 +33,17 @@ test('AssertionPractice',async({page})=>{
     await page.goto('https://demoqa.com/text-box')
     // check the attribute
     await expect(page.locator("#submit")).toHaveAttribute('type','button')
+
+    // to have text assertion
+    await expect(page.locator("//h1[normalize-space()='Text Box']")).toHaveText('Text Box') // full text
+
+    //to contain text
+    await expect(page.locator("//h1[normalize-space()='Text Box']")).toContainText('Box') //[partial text
     
+    //to have value
+    await page.locator('#userEmail').fill('test@example.com') //enter the email
+    await expect(page.locator('#userEmail')).toHaveValue('test@example.com')
+
+
 
 })
