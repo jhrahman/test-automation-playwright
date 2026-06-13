@@ -45,6 +45,8 @@ export default defineConfig({
     launchOptions: {
       slowMo: 2000,
     },
+    browserName: 'chromium',
+    channel: 'chrome',
   },
   
 
