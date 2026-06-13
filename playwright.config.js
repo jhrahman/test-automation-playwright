@@ -1,18 +1,14 @@
 // @ts-check
-import { defineConfig, devices } from '@playwright/test';
+const { defineConfig, devices } = require('@playwright/test');
+const dotenv = require('dotenv');
+const path = require('path');
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
+dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
-export default defineConfig({
+module.exports = defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -31,9 +27,6 @@ export default defineConfig({
   {
     timeout: 20000,
   },
-  
-
-
 
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
@@ -48,7 +41,6 @@ export default defineConfig({
     browserName: 'chromium',
     channel: 'chrome',
   },
-  
 
   /* Configure projects for major browsers */
   projects: [
@@ -95,5 +87,3 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
-
-
