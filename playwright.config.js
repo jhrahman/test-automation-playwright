@@ -21,7 +21,7 @@ module.exports = defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
-  timeout: 1200000, // global timeout
+  timeout: 120000, // global timeout 2 mints per test
   //assertion timeout
   expect:
   {
@@ -36,11 +36,14 @@ module.exports = defineConfig({
     trace: 'on-first-retry',
      /* Slow down Playwright operations by 3 seconds */
     launchOptions: {
-      slowMo: 2000,
+      slowMo: process.env.CI ? 0 : 2000,
     },
     browserName: 'chromium',
     channel: 'chrome',
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
   },
+  
 
   /* Configure projects for major browsers */
   projects: [
