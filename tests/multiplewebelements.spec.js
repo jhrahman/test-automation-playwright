@@ -9,7 +9,7 @@ test.describe.serial('WebTests', ()=>{
         for(const link of links)
         {
             const allLinks = await link.textContent()
-            console.log(allLinks)
+            // console.log(allLinks)
         }
 
     })
@@ -19,7 +19,7 @@ test.describe.serial('WebTests', ()=>{
         for (const product of products)
         {
             const productTitle = await product.textContent()
-            console.log(productTitle)
+            // console.log(productTitle)
         }
     })
 })
