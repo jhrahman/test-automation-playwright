@@ -15,10 +15,26 @@ test('Tables', async({page})=>{
     await expect(await rows.count()).toBe(5)
 
     // to select specific products
-    const matchedRow = await rows.filter({
+   /* const matchedRow = await rows.filter({
         has: page.locator('td'),
         hasText: 'Smartwatch'
     }) 
-    await matchedRow.locator('input').check()
+    await matchedRow.locator('input').check() */
+
+//select multiple products with resuable function
+await selectProduct(rows, page, 'Smartphone')
+await selectProduct(rows, page, 'Tablet')
+await selectProduct(rows, page, 'Wireless Earbuds')
+
+await page.waitForTimeout(5000)
 
 })
+
+async function selectProduct(rows, page, name) {
+    const matchedRow = await rows.filter({
+        has: page.locator('td'),
+        hasText: name
+    }) 
+    await matchedRow.locator('input').check()
+    
+}
