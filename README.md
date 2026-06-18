@@ -78,37 +78,29 @@ Example workflow (as present in this repository):
 ```yaml
 name: Playwright Tests
 env:
-		TEST_USERNAME: ${{ secrets.TEST_USERNAME }}
-		TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
+	TEST_USERNAME: ${{ secrets.TEST_USERNAME }}
+	TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
 on:
 	workflow_dispatch:
 	push:
-			branches:
-				- develop
-
-
+		branches:
+			- develop
 
 jobs:
 	test:
 		timeout-minutes: 60
 		runs-on: ubuntu-latest
-
 		steps:
 			- uses: actions/checkout@v4
-
 			- uses: actions/setup-node@v4
 				with:
 					node-version: lts/*
-
 			- name: Install dependencies
 				run: npm ci
-
 			- name: Install Playwright Browsers
 				run: npx playwright install --with-deps
-
 			- name: Run Playwright tests
 				run: npx playwright test
-
 			- uses: actions/upload-artifact@v4
 				if: ${{ !cancelled() }}
 				with:
