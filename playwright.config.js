@@ -33,7 +33,7 @@ module.exports = defineConfig({
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'on',
      /* Slow down Playwright operations by 3 seconds */
     launchOptions: {
       slowMo: process.env.CI ? 0 : 1000,
@@ -42,6 +42,7 @@ module.exports = defineConfig({
     channel: 'chrome',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
+    
   },
   
 
