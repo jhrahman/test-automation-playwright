@@ -24,10 +24,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: lts/*
+          node-version: 22
 
       - name: Install Dependencies
         run: npm ci
@@ -40,7 +40,7 @@ jobs:
         run: npx playwright test
         continue-on-error: true
 
-      - name: Upload Playwright HTML Report
+      - name: Upload Playwright Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -48,37 +48,17 @@ jobs:
           path: playwright-report
           retention-days: 30
 
-      # -----------------------------
-      # Allure (main branch only)
-      # -----------------------------
-
-      - name: Checkout gh-pages
-        if: always() && github.ref == 'refs/heads/main'
-        uses: actions/checkout@v4
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
-
       - name: Generate Allure Report
         if: always() && github.ref == 'refs/heads/main'
-        uses: simple-elf/allure-report-action@v1.9
-        with:
-          gh_pages: gh-pages
-          allure_history: allure-history
-          allure_results: allure-results
+        run: npx allure generate allure-results --clean -o allure-report
 
-      - name: Publish Allure Report
+      - name: Deploy Allure Report to GitHub Pages
         if: always() && github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: allure-history
-
-      # -----------------------------
-      # Fail workflow if tests failed
-      # -----------------------------
+          publish_dir: ./allure-report
 
       - name: Fail workflow if tests failed
         if: steps.tests.outcome == 'failure'
