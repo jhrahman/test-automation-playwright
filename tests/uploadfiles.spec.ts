@@ -12,7 +12,7 @@ test.describe.serial('Upload Files', async()=>{
         await page.waitForTimeout(2000)
     })
 
-    test('Multiple File Upload', async({page})=>{
+    test('Multiple File Upload', async ({ page }: { page: Page }) => {
         await page.goto('https://davidwalsh.name/demo/multiple-file-upload.php')
         await page.locator("#filesToUpload").setInputFiles(['./tests/uploadFiles/cat.jpeg', './tests/uploadFiles/test.jpg'])
         

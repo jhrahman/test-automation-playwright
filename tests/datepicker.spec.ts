@@ -1,22 +1,19 @@
-const {test, expect} = require('@playwright/test')
+import { test, expect, type Page } from '@playwright/test';
 
-
-test.describe('Date Picker Handle', async()=>{
-
-
+test.describe('Date Picker Handle', async () => {
     //direct approach in the input box
-    test('Date Picker', async({page})=>{
+    test('Date Picker', async ({ page }: { page: Page }) => {
     await page.goto('https://testautomationpractice.blogspot.com/')
     await page.locator("#datepicker").fill('06/01/2026') // direct approach with fill
 
     })
 
     // handle the calender from calender widget
-    test('Date picker from calender Next Arrow', async({page})=>{
+    test('Date picker from calender Next Arrow', async ({ page }: { page: Page }) => {
         await page.goto('https://testautomationpractice.blogspot.com/')
-        const targetYear = "2027"
-        const targetMonth ="January"
-        const targetDate ="15"
+        const targetYear: string = '2027';
+        const targetMonth: string = 'January';
+        const targetDate: string = '15';
 
         await page.locator("#datepicker").click()
         

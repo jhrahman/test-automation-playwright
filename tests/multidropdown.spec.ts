@@ -1,6 +1,6 @@
-const {test, expect} = require('@playwright/test')
+import { test, expect, type Page } from '@playwright/test';
 
-test('Multi Select DropDown',async({page})=>{
+test('Multi-Select DropDown', async ({ page }: { page: Page }) => {
     await page.goto('https://testautomationpractice.blogspot.com/')
     await page.locator("#colors").selectOption(['Blue', 'Green', 'Yellow'])
 

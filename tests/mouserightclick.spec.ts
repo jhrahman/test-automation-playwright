@@ -1,6 +1,6 @@
-const {test, expect} = require('@playwright/test')
+import { test, expect, type Page } from '@playwright/test';
 
-test('Mouse Right CLick', async({page})=>{
+test('Mouse Right CLick', async ({ page }: { page: Page }) => {
     await page.goto('https://swisnl.github.io/jQuery-contextMenu/3.x/demo.html')
 
     await page.locator("//span[@class='context-menu-one btn btn-neutral']").click({button: 'right'})

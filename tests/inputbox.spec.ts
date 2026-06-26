@@ -1,6 +1,6 @@
-const {test, expect} = require ('@playwright/test')
+import { test, expect, type Page } from '@playwright/test';
 
-test('inputboxtest', async({page})=>{
+test('inputboxtest', async ({ page }: { page: Page }) => {
     await page.goto('https://demoqa.com/text-box')
     await page.locator("#userName").fill('Test Engineer')
     await page.locator("#userEmail").fill('test@example.com')
@@ -20,23 +20,24 @@ test('inputboxtest', async({page})=>{
     //multiple checkbox handle
     await page.goto('https://www.qa-practice.com/elements/checkbox/mult_checkbox')
 
-    const checkboxLocators = [
-        "#id_checkboxes_1",
-        "#id_checkboxes_2"
-    ]
+    const checkboxLocators: string[] = [
+        '#id_checkboxes_1',
+        '#id_checkboxes_2',
+    ];
 
-    for (const checkboxes of checkboxLocators){
-        await page.locator(checkboxes).check()
+    for (const checkboxes: string of checkboxLocators) {
+        await page.locator(checkboxes).check();
     }
-    
+
     // verify if these are checked and then uncheck
-    for (const checkboxes of checkboxLocators){
-        if (await page.locator(checkboxes).isChecked())
-            await page.locator(checkboxes).uncheck()
+    for (const checkboxes: string of checkboxLocators) {
+        if (await page.locator(checkboxes).isChecked()) {
+            await page.locator(checkboxes).uncheck();
+        }
     }
     // now verify the unchecks
-    for(const checkboxes of checkboxLocators){
-        await expect(await page.locator(checkboxes).isChecked()).toBeFalsy()
+    for (const checkboxes: string of checkboxLocators) {
+        await expect(await page.locator(checkboxes).isChecked()).toBeFalsy();
     }
     
 

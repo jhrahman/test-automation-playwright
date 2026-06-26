@@ -1,6 +1,6 @@
-const {test, expect} = require('@playwright/test')
+import { test, expect, type Page } from '@playwright/test';
 
-test('Keyboard Actions', async({page})=>{
+test('Keyboard Actions', async ({ page }: { page: Page }) => {
     await page.goto('https://gotranscript.com/text-compare')
 
     await page.locator('[name="text1"]').fill('Welcome to the team')

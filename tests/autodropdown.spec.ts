@@ -8,7 +8,7 @@ test('AutoDropDown', async({page})=>{
 
     for (const options of city)
     {
-        const value = await options.textContent()
+        const value: string | null = await options.textContent();
         if(value.includes('Pune'))
         {
             await options.click()
@@ -20,9 +20,9 @@ test('AutoDropDown', async({page})=>{
     await page.waitForSelector("//div[@role='heading'and @style='text-decoration: none;']")
     const destination = await page.$$("//div[@role='heading'and @style='text-decoration: none;']")
     
-    for (const dst of destination)
+    for (const dst: ElementHandle of destination)
     {
-        const value2 = await dst.textContent()
+        const value2: string | null = await dst.textContent();
         if (value2.includes('Nagpur'))
         {
             await dst.click()
