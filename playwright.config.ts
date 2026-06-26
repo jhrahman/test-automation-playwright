@@ -20,7 +20,10 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
 
   /* Reporter */
-  reporter: 'html',
+  reporter: [
+    ['html'],
+    ['allure-playwright']
+  ],
 
   /* Global timeout */
   timeout: 120000,
