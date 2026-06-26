@@ -1,10 +1,10 @@
-const { test, expect } = require("@playwright/test");
+import { test, expect, type Page, type Dialog } from '@playwright/test';
 
-test.describe.serial("Alerts Tests", async () => {
+test.describe.serial('Alerts Tests', async () => {
     // normal alert handler
-    test("Alerts with OK", async ({ page }) => {
-        await page.goto("https://testautomationpractice.blogspot.com/");
-        page.on("dialog", async (dialog) => {
+    test('Alerts with OK', async ({ page }: { page: Page }) => {
+        await page.goto('https://testautomationpractice.blogspot.com/');
+        page.on('dialog', async (dialog: Dialog) => {
             expect(dialog.type()).toContain("alert");
             expect(dialog.message()).toContain("I am an alert box!");
             await dialog.accept();
@@ -12,9 +12,9 @@ test.describe.serial("Alerts Tests", async () => {
         await page.locator("#alertBtn").click();
     });
     // confimation alert handler
-    test("Confirmation Alert with OK", async ({ page }) => {
-        await page.goto("https://testautomationpractice.blogspot.com/");
-        page.on("dialog", async (dialog) => {
+    test('Confirmation Alert with OK', async ({ page }: { page: Page }) => {
+        await page.goto('https://testautomationpractice.blogspot.com/');
+        page.on('dialog', async (dialog: Dialog) => {
             expect(dialog.type()).toContain("confirm");
             expect(dialog.message()).toContain("Press a button!");
             await dialog.accept();
@@ -24,12 +24,12 @@ test.describe.serial("Alerts Tests", async () => {
     });
 
     // prompt alert handler
-    test("Prompt Alert", async ({ page }) => {
-        await page.goto("https://testautomationpractice.blogspot.com/");
-        const randomName = Array.from({ length: 6 }, () =>
+    test('Prompt Alert', async ({ page }: { page: Page }) => {
+        await page.goto('https://testautomationpractice.blogspot.com/');
+        const randomName: string = Array.from({ length: 6 }, () =>
             String.fromCharCode(97 + Math.floor(Math.random() * 26)),
-        ).join("");
-        page.on("dialog", async (dialog) => {
+        ).join('');
+        page.on('dialog', async (dialog: Dialog) => {
             expect(dialog.type()).toContain("prompt");
             expect(dialog.message()).toContain("Please enter your name:");
             expect(dialog.defaultValue()).toContain("Harry Potter");

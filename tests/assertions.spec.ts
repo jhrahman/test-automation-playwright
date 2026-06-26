@@ -1,6 +1,6 @@
-const {test, expect} = require('@playwright/test')
+import { test, expect, type Page } from '@playwright/test';
 
-test('AssertionPractice',async({page})=>{
+test('AssertionPractice', async ({ page }: { page: Page }) => {
      
 
     //open the app

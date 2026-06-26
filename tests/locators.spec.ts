@@ -1,6 +1,6 @@
-const {test, expect} = require('@playwright/test');
+import { test, expect, type Page, type Locator } from '@playwright/test';
 
-test('Locators', async({page})=>{
+test('Locators', async ({ page }: { page: Page }) => {
     await page.goto('https://demoblaze.com')
 
     //click on login button
@@ -15,7 +15,7 @@ test('Locators', async({page})=>{
     await page.click("//button[normalize-space()='Log in']")
 
     //verify logout link presense
-    const logOut = await page.locator("//a[@id='logout2']")
+    const logOut: Locator = page.locator("//a[@id='logout2']");
     await expect(logOut).toBeVisible();
 
     //close browser

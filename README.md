@@ -1,38 +1,44 @@
 # Playwright Practices — Web Automation
 
-A hands-on collection of Playwright end-to-end tests and examples for learning Playwright APIs, locators, frames, dropdowns, forms, and test reporting.
+A hands-on collection of Playwright end-to-end tests written in **TypeScript** for learning Playwright APIs, locators, frames, dropdowns, forms, and test reporting.
 
 ## About this repository
 
 - Purpose: Demonstration and practice repository for Playwright test scenarios and automation patterns.
-- Contents: Playwright test specs in [tests/](tests), Playwright configuration in [playwright.config.js](playwright.config.js), and example HTML report in `playwright-report/`.
+- Language: TypeScript with strict type checking enabled.
+- Contents: Playwright test specs in [tests/](tests), Playwright configuration in [playwright.config.ts](playwright.config.ts), TypeScript configuration in [tsconfig.json](tsconfig.json), and example HTML report in `playwright-report/`.
 
 ## Tests
 
-- All automated tests live under [tests/](tests). Tests are designed to demonstrate common Playwright patterns (locators, form interactions, frames, dropdowns, assertions, device emulation, and test reporting). New tests may be added over time; the instructions below show how to run and debug them locally and in CI.
+- All automated tests live under [tests/](tests) with `.spec.ts` extension.
+- Tests are designed to demonstrate common Playwright patterns: locators, form interactions, frames, dropdowns, assertions, device emulation, and test reporting.
+- All test files have full type annotations for parameters and variables.
 
-## Playwright configuration highlights
+## Configuration
 
-See [playwright.config.js](playwright.config.js) for full details. Key highlights:
+**TypeScript Configuration** ([tsconfig.json](tsconfig.json)):
+- Strict mode enabled for full type safety
+- ES2020 target with Node module resolution
+- Includes Playwright and Node.js type definitions
 
-- Parallel execution with worker tuning for CI.
-- Retries enabled on CI, disabled locally.
-- Timeouts tuned for network interactions.
-- HTML reporter enabled; screenshots/videos retained on failures; traces collected on retries.
-- Primary browser configured to run with Chromium.
+**Playwright Configuration** ([playwright.config.ts](playwright.config.ts)):
+- Parallel execution with worker tuning for CI
+- Retries enabled on CI, disabled locally
+- Timeouts tuned for network interactions
+- HTML reporter enabled; screenshots/videos retained on failures
+- Primary browser: Chromium
 
 ## Dependencies
 
-Key dependencies referenced in `package.json`:
+Key dependencies in `package.json`:
 
 - `@playwright/test` — Playwright test runner
+- `@types/node` — Node.js type definitions
 - `dotenv` — environment variable loading
-
-Note: `package.json` currently has no `test` npm script; tests are executed using the Playwright CLI.
 
 ## Local quickstart
 
-Install dependencies and Playwright browsers, then run tests:
+Install dependencies and Playwright browsers:
 
 ```bash
 npm install
@@ -54,16 +60,16 @@ npx playwright show-report
 Run a single test file:
 
 ```bash
-npx playwright test tests/your-test.spec.js
+npx playwright test tests/your-test.spec.ts
 ```
 
-Run headed (interactive) for debugging:
+Run in headed mode (interactive):
 
 ```bash
 npx playwright test --headed
 ```
 
-Run with a single worker and retries disabled (useful for debugging flaky tests):
+Run with single worker and retries disabled (for debugging):
 
 ```bash
 npx playwright test --workers=1 --retries=0
@@ -71,73 +77,23 @@ npx playwright test --workers=1 --retries=0
 
 ## GitHub Actions CI
 
-This repository includes a GitHub Actions workflow at [.github/workflows/playwright.yml](.github/workflows/playwright.yml) that installs dependencies and Playwright browsers, runs tests, and uploads the Playwright HTML report as an artifact. The workflow in this repo runs on `develop` and supports manual dispatch.
+This repository includes a GitHub Actions workflow at [.github/workflows/playwright.yml](.github/workflows/playwright.yml) that installs dependencies, runs tests, and uploads the HTML report as an artifact.
 
-Example workflow (as present in this repository):
+Workflow uses `TEST_USERNAME` and `TEST_PASSWORD` from repository secrets if your tests require credentials.
 
-```yaml
-name: Playwright Tests
-env:
-TEST_USERNAME: ${{ secrets.TEST_USERNAME }}
-TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
-on:
-workflow_dispatch:
-push:
-branches:
-- develop
+## Troubleshooting
 
-jobs:
-test:
-timeout-minutes: 60
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v4
-- uses: actions/setup-node@v4
-	with:
-		node-version: lts/*
-- name: Install dependencies
-	run: npm ci
-- name: Install Playwright Browsers
-	run: npx playwright install --with-deps
-- name: Run Playwright tests
-	run: npx playwright test
-- uses: actions/upload-artifact@v4
-	if: ${{ !cancelled() }}
-	with:
-		name: playwright-report
-		path: playwright-report/
-		retention-days: 30
-```
-
-Badge (add after CI is enabled):
-
-```markdown
-![Playwright Tests](https://github.com/<OWNER>/<REPO>/actions/workflows/playwright.yml/badge.svg)
-```
-
-## CI secrets & environment
-
-- The workflow uses `TEST_USERNAME` and `TEST_PASSWORD` from repository secrets; set these if CI tests require credentials.
-- Ensure external services required by tests are reachable from `ubuntu-latest`.
-
-## Troubleshooting & tips
-
-- If browsers fail to install on CI, ensure `npx playwright install --with-deps` runs and inspect runner logs for missing system libraries.
 - Use `--workers=1` and `--retries=0` when debugging locally.
-- For flaky tests, collect traces and use retries in CI:
+- Run in debug mode:
+
+```bash
+npx playwright test tests/your-test.spec.ts --headed --debug
+```
+
+- For detailed trace collection:
 
 ```bash
 npx playwright test --trace on-first-retry
 ```
-
-- For interactive debugging:
-
-```bash
-npx playwright test tests/your-test.spec.js --headed --debug
-```
-
-## Contributing
-
-- Create a branch, add or update tests under [tests/](tests), verify `npx playwright test` locally, and open a PR. CI runs on pushes to `develop` and on manual dispatch.
 
 ---

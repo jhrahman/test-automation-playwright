@@ -1,6 +1,6 @@
-const {test, expect} = require('@playwright/test')
+import { test, expect, type Page } from '@playwright/test';
 
-test('Double Click', async({page})=>{
+test('Double Click', async ({ page }: { page: Page }) => {
     await page.goto('https://testautomationpractice.blogspot.com/')
     await page.locator("//button[normalize-space()='Copy Text']").dblclick()
 

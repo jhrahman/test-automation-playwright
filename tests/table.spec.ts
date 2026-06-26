@@ -1,6 +1,6 @@
-const {test, expect } = require('@playwright/test')
+import { test, expect, type Page, type Locator } from '@playwright/test';
 
-test('Tables', async({page})=>{
+test('Tables', async ({ page }: { page: Page }) => {
     await page.goto('https://testautomationpractice.blogspot.com/')
 
     const table = await page.locator("#productTable")

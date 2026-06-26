@@ -1,6 +1,6 @@
-const {test, expect} = require('@playwright/test')
+import { test, expect, type Page } from '@playwright/test';
 
-test('built-inLocators', async({page})=>{
+test('built-inLocators', async ({ page }: { page: Page }) => {
     test.fixme()
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 

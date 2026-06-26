@@ -1,6 +1,6 @@
-const {test, expect} = require('@playwright/test')
+import { test, expect, type Page } from '@playwright/test';
 
-test('DropwDown', async({page})=>{
+test('DropwDown', async ({ page }: { page: Page }) => {
     await page.goto('https://demoqa.com/select-menu')
     // await page.locator("#react-select-4-input").click()
     // await page.locator("#react-select-4-input]").selectOption(['Blue','Red'])

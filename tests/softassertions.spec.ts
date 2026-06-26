@@ -1,6 +1,6 @@
-const {test, expect} = require('@playwright/test')
+import { test, expect, type Page } from '@playwright/test';
 
-test('Soft Asserton',async({page})=>{
+test('Soft Asserton', async ({ page }: { page: Page }) => {
     await page.goto('https://www.demoblaze.com')
 
     //Hard Assertion

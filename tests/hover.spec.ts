@@ -1,6 +1,6 @@
-const {test, expect} = require('@playwright/test')
+import { test, expect, type Page } from '@playwright/test';
 
-test('Mouse Hover', async({page})=>{
+test('Mouse Hover', async ({ page }: { page: Page }) => {
     await page.goto('https://cartup.com/')
     // await page.locator("//svg[contains(@viewBox,'0 0 24 24')]/ancestor::button").hover()
     await page.getByRole('button', { name: 'Categories' }).hover();
