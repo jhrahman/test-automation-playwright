@@ -1,17 +1,22 @@
 name: Playwright Tests
 
+# Environment variables pulled from GitHub repository secrets
 env:
   TEST_USERNAME: ${{ secrets.TEST_USERNAME }}
   TEST_PASSWORD: ${{ secrets.TEST_PASSWORD }}
 
+# Trigger workflow on:
 on:
+  # Every push to develop and main
   push:
     branches:
       - develop
       - main
 
+  # Manual execution from the GitHub Actions tab
   workflow_dispatch:
 
+# Required for publishing to the gh-pages branch
 permissions:
   contents: write
 
@@ -21,26 +26,34 @@ jobs:
     timeout-minutes: 60
 
     steps:
+      # Checkout repository source code
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      # Install the latest LTS version of Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: lts/*
 
+      # Install project dependencies from package-lock.json
       - name: Install Dependencies
         run: npm ci
 
+      # Install Playwright browsers and Linux dependencies
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
+      # Execute Playwright tests
+      # continue-on-error allows report generation even if tests fail
       - name: Run Playwright Tests
         id: tests
         run: npx playwright test
         continue-on-error: true
 
-      - name: Upload Playwright Report
+      # Upload the Playwright HTML report as a workflow artifact
+      # Useful for downloading the report directly from GitHub Actions
+      - name: Upload Playwright HTML Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -48,10 +61,14 @@ jobs:
           path: playwright-report
           retention-days: 30
 
+      # Generate Allure report
+      # Only publish reports from the main branch
       - name: Generate Allure Report
         if: always() && github.ref == 'refs/heads/main'
-        run: npx allure generate allure-results --clean -o allure-report
+        run: npm run allure:generate
 
+      # Publish the generated Allure report to the gh-pages branch
+      # This becomes the GitHub Pages website
       - name: Deploy Allure Report to GitHub Pages
         if: always() && github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v4
@@ -59,7 +76,10 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./allure-report
+          force_orphan: true
 
+      # Mark the workflow as failed if any Playwright tests failed
+      # Reports are still generated and published before failing the job
       - name: Fail workflow if tests failed
         if: steps.tests.outcome == 'failure'
         run: exit 1
