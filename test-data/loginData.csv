@@ -1,0 +1,5 @@
+username,password,shouldLogin,errorMessage
+laura.taylor1234@example.com,test123,true,
+,,false,"Login was unsuccessful. Please correct the errors and try again. No customer account found"
+wrong@example.com,test123,false,"Login was unsuccessful. Please correct the errors and try again. The credentials provided are incorrect"
+laura.taylor1234@example.com,wrongPassword,false,"Login was unsuccessful. Please correct the errors and try again. The credentials provided are incorrect"
