@@ -1,0 +1,1896 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: hover.spec.ts >> Mouse Hover
+- Location: tests/hover.spec.ts:3:5
+
+# Error details
+
+```
+Test timeout of 120000ms exceeded.
+```
+
+```
+Error: locator.hover: Test timeout of 120000ms exceeded.
+Call log:
+  - waiting for getByRole('paragraph').filter({ hasText: 'Groceries & Essentials' })
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e6]:
+        - generic [ref=e7] [cursor=pointer]:
+          - img "Cartup Online Shopping Logo" [ref=e8]
+          - generic [ref=e9]:
+            - generic [ref=e10]: Cartup App
+            - generic [ref=e11]: Download & Get ৳250 OFF.
+        - generic [ref=e12]:
+          - button "Open" [ref=e13] [cursor=pointer]
+          - button "" [ref=e14] [cursor=pointer]:
+            - generic [ref=e15]: 
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - generic [ref=e23]: 
+            - textbox [ref=e24]
+          - generic: Bashundhara
+        - button "Search" [ref=e26] [cursor=pointer]:
+          - generic [ref=e27]: Search
+    - main [ref=e28]:
+      - generic [ref=e31]:
+        - generic [ref=e33]:
+          - link "Home Slider 3" [ref=e36] [cursor=pointer]:
+            - /url: /sl-dpb/mega/mega-add-to-cart
+            - img "Home Slider 3" [ref=e38]
+          - link "Home Slider 4" [ref=e41] [cursor=pointer]:
+            - /url: /sl-dpb/mega/mega-review-and-win
+            - img "Home Slider 4" [ref=e43]
+          - link "Home Slider 5" [ref=e46] [cursor=pointer]:
+            - /url: /sl-dpb/mega/mega-city-bank
+            - img "Home Slider 5" [ref=e48]
+          - link "Home Slider 6" [ref=e51] [cursor=pointer]:
+            - /url: /sl-dpb/mega/mega-buy-3-ship-free
+            - img "Home Slider 6" [ref=e53]
+          - link "Home Slider 7" [ref=e56] [cursor=pointer]:
+            - /url: /sl-dpb/mega/mega-cartup-gift-cards
+            - img "Home Slider 7" [ref=e58]
+          - link "Home Slider 8" [ref=e61] [cursor=pointer]:
+            - /url: /sl-dpb/mega/mega-seller-free-delivery
+            - img "Home Slider 8" [ref=e63]
+          - link "Home Slider 9" [ref=e66] [cursor=pointer]:
+            - /url: /sl-dpb/mega/mega-summer-trend-carnival
+            - img "Home Slider 9" [ref=e68]
+          - link "Home Slider 0" [ref=e71] [cursor=pointer]:
+            - /url: /sl-dpb/mega/mega-free-delivery-all-products
+            - img "Home Slider 0" [ref=e73]
+          - link "Home Slider 1" [ref=e76] [cursor=pointer]:
+            - /url: /sl-dpb/mega/mega-july-jackpot-2026-teasing
+            - img "Home Slider 1" [ref=e78]
+          - link "Home Slider 2" [ref=e81] [cursor=pointer]:
+            - /url: /sl-dpb/mega/mega-shop-big-fly-bigger
+            - img "Home Slider 2" [ref=e83]
+        - button [ref=e95] [cursor=pointer]
+        - button [ref=e96] [cursor=pointer]
+      - generic [ref=e98]:
+        - generic [ref=e99]:
+          - img "Flash Sale Logo" [ref=e101]
+          - generic [ref=e103]:
+            - generic [ref=e105]: "10"
+            - generic [ref=e106]: ":"
+            - generic [ref=e108]: "07"
+            - generic [ref=e109]: ":"
+            - generic [ref=e111]: "28"
+        - generic [ref=e114]:
+          - link "HTC AT‑1210 Professional Hair Clipper Trimmer for Men Free Delivery HTC AT‑1210 Professional Hair Clipper Trimmer for Men 9 items sold ৳ 399 ৳799 discount badge 50%" [ref=e116] [cursor=pointer]:
+            - /url: /product/htc_at-1210_professional_hair_clipper_trimmer_for_men_2178882948948329_3dausl?variantId=1229151
+            - generic [ref=e117]:
+              - generic [ref=e118]:
+                - img "HTC AT‑1210 Professional Hair Clipper Trimmer for Men" [ref=e119]
+                - img "Free Delivery" [ref=e121]
+              - generic [ref=e122]:
+                - paragraph [ref=e123]: HTC AT‑1210 Professional Hair Clipper Trimmer for Men
+                - generic [ref=e125]: 9 items sold
+              - generic [ref=e128]:
+                - generic [ref=e129]:
+                  - generic [ref=e130]: ৳ 399
+                  - generic [ref=e131]: ৳799
+                - generic [ref=e132]:
+                  - img "discount badge" [ref=e133]
+                  - generic [ref=e134]: 50%
+          - link "Nature Beauty Milk Face Wash 100 ml Free Delivery Nature Beauty Milk Face Wash 100 ml 2 items left ৳ 136 ৳295 discount badge 54%" [ref=e136] [cursor=pointer]:
+            - /url: /product/nature_beauty_milk_face_wash-100ml_2268995081175980_qp7fh1?variantId=1234404
+            - generic [ref=e137]:
+              - generic [ref=e138]:
+                - img "Nature Beauty Milk Face Wash 100 ml" [ref=e139]
+                - img "Free Delivery" [ref=e141]
+              - generic [ref=e142]:
+                - paragraph [ref=e143]: Nature Beauty Milk Face Wash 100 ml
+                - generic [ref=e145]: 2 items left
+              - generic [ref=e148]:
+                - generic [ref=e149]:
+                  - generic [ref=e150]: ৳ 136
+                  - generic [ref=e151]: ৳295
+                - generic [ref=e152]:
+                  - img "discount badge" [ref=e153]
+                  - generic [ref=e154]: 54%
+          - link "Lizol Floor Cleaner 500ml Lavender Free Delivery Lizol Floor Cleaner 500ml Lavender Limited Stock! ৳ 157 ৳160 discount badge 2%" [ref=e156] [cursor=pointer]:
+            - /url: /product/lizol_floor_cleaner_500ml_lavender_26338657739454_yzxhih?variantId=1562279
+            - generic [ref=e157]:
+              - generic [ref=e158]:
+                - img "Lizol Floor Cleaner 500ml Lavender" [ref=e159]
+                - img "Free Delivery" [ref=e161]
+              - generic [ref=e162]:
+                - paragraph [ref=e163]: Lizol Floor Cleaner 500ml Lavender
+                - generic [ref=e165]: Limited Stock!
+              - generic [ref=e167]:
+                - generic [ref=e168]:
+                  - generic [ref=e169]: ৳ 157
+                  - generic [ref=e170]: ৳160
+                - generic [ref=e171]:
+                  - img "discount badge" [ref=e172]
+                  - generic [ref=e173]: 2%
+          - link "Seat Back Support For Car/Home/ Office Chair - Brown Free Delivery Seat Back Support For Car/Home/ Office Chair - Brown Limited Stock! ৳ 445 ৳900 discount badge 51%" [ref=e175] [cursor=pointer]:
+            - /url: /product/seat_back_support_for_carhome_office_chair_-_brown_171250162065236_dumxxn?variantId=542710
+            - generic [ref=e176]:
+              - generic [ref=e177]:
+                - img "Seat Back Support For Car/Home/ Office Chair - Brown" [ref=e178]
+                - img "Free Delivery" [ref=e180]
+              - generic [ref=e181]:
+                - paragraph [ref=e182]: Seat Back Support For Car/Home/ Office Chair - Brown
+                - generic [ref=e184]: Limited Stock!
+              - generic [ref=e186]:
+                - generic [ref=e187]:
+                  - generic [ref=e188]: ৳ 445
+                  - generic [ref=e189]: ৳900
+                - generic [ref=e190]:
+                  - img "discount badge" [ref=e191]
+                  - generic [ref=e192]: 51%
+          - link "Shukran Minicate Rice – 5kg Free Delivery Shukran Minicate Rice – 5kg Limited Stock! ৳ 422 ৳500 discount badge 16%" [ref=e194] [cursor=pointer]:
+            - /url: /product/shukran_minicate_5_kg_298827714879019_wqyfkr?variantId=2951135
+            - generic [ref=e195]:
+              - generic [ref=e196]:
+                - img "Shukran Minicate Rice – 5kg" [ref=e197]
+                - img "Free Delivery" [ref=e199]
+              - generic [ref=e200]:
+                - paragraph [ref=e201]: Shukran Minicate Rice – 5kg
+                - generic [ref=e203]: Limited Stock!
+              - generic [ref=e205]:
+                - generic [ref=e206]:
+                  - generic [ref=e207]: ৳ 422
+                  - generic [ref=e208]: ৳500
+                - generic [ref=e209]:
+                  - img "discount badge" [ref=e210]
+                  - generic [ref=e211]: 16%
+        - img "View All Products" [ref=e213] [cursor=pointer]
+      - generic [ref=e214]:
+        - heading "Categories" [level=2] [ref=e216]
+        - generic [ref=e219]:
+          - link "alt Men's Fashion" [ref=e221] [cursor=pointer]:
+            - /url: /category/men_530
+            - img "alt" [ref=e223]
+            - paragraph [ref=e224]: Men's Fashion
+          - link "alt Computer & Gaming" [ref=e226] [cursor=pointer]:
+            - /url: /category/computers__laptops
+            - img "alt" [ref=e228]
+            - paragraph [ref=e229]: Computer & Gaming
+          - link "alt Home & Living" [ref=e231] [cursor=pointer]:
+            - /url: /category/furniture
+            - img "alt" [ref=e233]
+            - paragraph [ref=e234]: Home & Living
+          - link "alt Groceries & Pet Supplies" [ref=e236] [cursor=pointer]:
+            - /url: /category/Groceries_20251127074323
+            - img "alt" [ref=e238]
+            - paragraph [ref=e239]: Groceries & Pet Supplies
+          - link "alt Health & Beauty" [ref=e241] [cursor=pointer]:
+            - /url: /category/health__beauty
+            - img "alt" [ref=e243]
+            - paragraph [ref=e244]: Health & Beauty
+          - link "alt Women's Fashion" [ref=e246] [cursor=pointer]:
+            - /url: /category/women_911
+            - img "alt" [ref=e248]
+            - paragraph [ref=e249]: Women's Fashion
+          - link "alt TV & Home Appliances" [ref=e251] [cursor=pointer]:
+            - /url: /category/home_appliances
+            - img "alt" [ref=e253]
+            - paragraph [ref=e254]: TV & Home Appliances
+          - link "alt Lifestyle & Hobbies" [ref=e256] [cursor=pointer]:
+            - /url: /category/stationery__craft
+            - img "alt" [ref=e258]
+            - paragraph [ref=e259]: Lifestyle & Hobbies
+          - link "alt Electronic Accessories" [ref=e261] [cursor=pointer]:
+            - /url: /category/mobile_accessories
+            - img "alt" [ref=e263]
+            - paragraph [ref=e264]: Electronic Accessories
+          - link "alt Watches & Bags" [ref=e266] [cursor=pointer]:
+            - /url: /category/watches
+            - img "alt" [ref=e268]
+            - paragraph [ref=e269]: Watches & Bags
+          - link "alt Sports & Outdoors" [ref=e271] [cursor=pointer]:
+            - /url: /category/sports__outdoors
+            - img "alt" [ref=e273]
+            - paragraph [ref=e274]: Sports & Outdoors
+          - link "alt Mother & Baby" [ref=e276] [cursor=pointer]:
+            - /url: /category/mother__baby
+            - img "alt" [ref=e278]
+            - paragraph [ref=e279]: Mother & Baby
+          - link "alt Automotives & Motorbikes" [ref=e281] [cursor=pointer]:
+            - /url: /category/motors
+            - img "alt" [ref=e283]
+            - paragraph [ref=e284]: Automotives & Motorbikes
+          - link "alt Phones & Accessories" [ref=e286] [cursor=pointer]:
+            - /url: /category/mobiles__tablets
+            - img "alt" [ref=e288]
+            - paragraph [ref=e289]: Phones & Accessories
+      - generic [ref=e290]:
+        - heading "Deals you can’t miss" [level=2] [ref=e292]
+        - generic [ref=e293]:
+          - link "10 Meter Cat5 RJ45 Ethernet LAN Network Cord Cable Lead 10/100/1000 Mbps Free Delivery 10 Meter Cat5 RJ45 Ethernet LAN Network Cord Cable Lead 10/100/1000 Mbps ৳ 190 -31% ৳ 275 5.0 (1)" [ref=e295] [cursor=pointer]:
+            - /url: /product/10-meter-cat5-rj45-ethernet-lan-network-cord-cable-lead-101001000-mbps-1763024917725-do95
+            - generic [ref=e296]:
+              - generic [ref=e297]:
+                - img "10 Meter Cat5 RJ45 Ethernet LAN Network Cord Cable Lead 10/100/1000 Mbps" [ref=e300]
+                - img "Free Delivery" [ref=e302]
+              - generic [ref=e304]:
+                - heading "10 Meter Cat5 RJ45 Ethernet LAN Network Cord Cable Lead 10/100/1000 Mbps" [level=4] [ref=e305]
+                - generic [ref=e307]:
+                  - generic [ref=e308]:
+                    - paragraph [ref=e309]: ৳ 190
+                    - paragraph [ref=e310]: "-31%"
+                  - paragraph [ref=e311]: ৳ 275
+                - generic [ref=e312]:
+                  - generic [ref=e315]:
+                    - generic [ref=e316]:
+                      - img [ref=e317]
+                      - img [ref=e319]
+                      - img [ref=e321]
+                      - img [ref=e323]
+                      - img [ref=e325]
+                    - generic [ref=e327]:
+                      - img [ref=e328]
+                      - img [ref=e330]
+                      - img [ref=e332]
+                      - img [ref=e334]
+                      - img [ref=e336]
+                  - paragraph [ref=e339]: "5.0"
+                  - paragraph [ref=e340]: (1)
+          - link "Savlon Twinkle Baby Pant Diaper XL – 44 Pcs Free Delivery tagtagSavlon Twinkle Baby Pant Diaper XL – 44 Pcs ৳ 919 -23% ৳ 1,200 4.9 (102)" [ref=e342] [cursor=pointer]:
+            - /url: /product/savlon_twinkle_baby_pant_diaper_xl_44_pcs_609065263419119_01to8z
+            - generic [ref=e343]:
+              - generic [ref=e344]:
+                - img "Savlon Twinkle Baby Pant Diaper XL – 44 Pcs" [ref=e347]
+                - img "Free Delivery" [ref=e349]
+              - generic [ref=e351]:
+                - heading "tagtagSavlon Twinkle Baby Pant Diaper XL – 44 Pcs" [level=4] [ref=e352]:
+                  - img "tag" [ref=e353]
+                  - img "tag" [ref=e354]
+                  - text: Savlon Twinkle Baby Pant Diaper XL – 44 Pcs
+                - generic [ref=e356]:
+                  - generic [ref=e357]:
+                    - paragraph [ref=e358]: ৳ 919
+                    - paragraph [ref=e359]: "-23%"
+                  - paragraph [ref=e360]: ৳ 1,200
+                - generic [ref=e361]:
+                  - generic [ref=e364]:
+                    - generic [ref=e365]:
+                      - img [ref=e366]
+                      - img [ref=e368]
+                      - img [ref=e370]
+                      - img [ref=e372]
+                      - img [ref=e374]
+                    - generic [ref=e376]:
+                      - img [ref=e377]
+                      - img [ref=e379]
+                      - img [ref=e381]
+                      - img [ref=e383]
+                      - img [ref=e385]
+                  - paragraph [ref=e388]: "4.9"
+                  - paragraph [ref=e389]: (102)
+          - link "Fresh Anonna Sanitary Napkin 290 Wings Heavy Flow 15 Pads (Buy 15 Pads get 8 Pads Free) Free Delivery tagtagFresh Anonna Sanitary Napkin 290 Wings Heavy Flow 15 Pads (Buy 15 Pads get 8 Pads Free) ৳ 150 -17% ৳ 180 4.9 (53)" [ref=e391] [cursor=pointer]:
+            - /url: /product/fresh_anonna_sanitary_napkin_290_wings_heavy_flow_15_pads_buy_15_pads_get_8_pads_free_1068880665184944_rypsb5
+            - generic [ref=e392]:
+              - generic [ref=e393]:
+                - img "Fresh Anonna Sanitary Napkin 290 Wings Heavy Flow 15 Pads (Buy 15 Pads get 8 Pads Free)" [ref=e398]
+                - img "Free Delivery" [ref=e400]
+              - generic [ref=e402]:
+                - heading "tagtagFresh Anonna Sanitary Napkin 290 Wings Heavy Flow 15 Pads (Buy 15 Pads get 8 Pads Free)" [level=4] [ref=e403]:
+                  - img "tag" [ref=e404]
+                  - img "tag" [ref=e405]
+                  - text: Fresh Anonna Sanitary Napkin 290 Wings Heavy Flow 15 Pads (Buy 15 Pads get 8 Pads Free)
+                - generic [ref=e407]:
+                  - generic [ref=e408]:
+                    - paragraph [ref=e409]: ৳ 150
+                    - paragraph [ref=e410]: "-17%"
+                  - paragraph [ref=e411]: ৳ 180
+                - generic [ref=e412]:
+                  - generic [ref=e415]:
+                    - generic [ref=e416]:
+                      - img [ref=e417]
+                      - img [ref=e419]
+                      - img [ref=e421]
+                      - img [ref=e423]
+                      - img [ref=e425]
+                    - generic [ref=e427]:
+                      - img [ref=e428]
+                      - img [ref=e430]
+                      - img [ref=e432]
+                      - img [ref=e434]
+                      - img [ref=e436]
+                  - paragraph [ref=e439]: "4.9"
+                  - paragraph [ref=e440]: (53)
+          - link "Veet Hair Removal Cream Normal Skin Pure 25gm Free Delivery tagtagVeet Hair Removal Cream Normal Skin Pure 25gm ৳ 97 -12% ৳ 110 5.0 (3)" [ref=e442] [cursor=pointer]:
+            - /url: /product/veet_womens_hair_removal_cream_normal_skin_25_gm_26338707201445_re795z
+            - generic [ref=e443]:
+              - generic [ref=e444]:
+                - img "Veet Hair Removal Cream Normal Skin Pure 25gm" [ref=e449]
+                - img "Free Delivery" [ref=e451]
+              - generic [ref=e453]:
+                - heading "tagtagVeet Hair Removal Cream Normal Skin Pure 25gm" [level=4] [ref=e454]:
+                  - img "tag" [ref=e455]
+                  - img "tag" [ref=e456]
+                  - text: Veet Hair Removal Cream Normal Skin Pure 25gm
+                - generic [ref=e458]:
+                  - generic [ref=e459]:
+                    - paragraph [ref=e460]: ৳ 97
+                    - paragraph [ref=e461]: "-12%"
+                  - paragraph [ref=e462]: ৳ 110
+                - generic [ref=e463]:
+                  - generic [ref=e466]:
+                    - generic [ref=e467]:
+                      - img [ref=e468]
+                      - img [ref=e470]
+                      - img [ref=e472]
+                      - img [ref=e474]
+                      - img [ref=e476]
+                    - generic [ref=e478]:
+                      - img [ref=e479]
+                      - img [ref=e481]
+                      - img [ref=e483]
+                      - img [ref=e485]
+                      - img [ref=e487]
+                  - paragraph [ref=e490]: "5.0"
+                  - paragraph [ref=e491]: (3)
+          - link "ABC Stylish Ceiling Fan – 56 Inch Free Delivery ABC Stylish Ceiling Fan – 56 Inch ৳ 2,590 -19% ৳ 3,201 4.7 (6)" [ref=e493] [cursor=pointer]:
+            - /url: /product/stylish_fashionable_abc_ceiling_fan_size_56_692661672161941_0vh5pf
+            - generic [ref=e494]:
+              - generic [ref=e495]:
+                - img "ABC Stylish Ceiling Fan – 56 Inch" [ref=e500]
+                - img "Free Delivery" [ref=e502]
+              - generic [ref=e504]:
+                - heading "ABC Stylish Ceiling Fan – 56 Inch" [level=4] [ref=e505]
+                - generic [ref=e507]:
+                  - generic [ref=e508]:
+                    - paragraph [ref=e509]: ৳ 2,590
+                    - paragraph [ref=e510]: "-19%"
+                  - paragraph [ref=e511]: ৳ 3,201
+                - generic [ref=e512]:
+                  - generic [ref=e515]:
+                    - generic [ref=e516]:
+                      - img [ref=e517]
+                      - img [ref=e519]
+                      - img [ref=e521]
+                      - img [ref=e523]
+                      - img [ref=e525]
+                    - generic [ref=e527]:
+                      - img [ref=e528]
+                      - img [ref=e530]
+                      - img [ref=e532]
+                      - img [ref=e534]
+                      - img [ref=e536]
+                  - paragraph [ref=e539]: "4.7"
+                  - paragraph [ref=e540]: (6)
+          - link "EQ100 Intelligent AI translation headset(App) Free Delivery tagEQ100 Intelligent AI translation headset(App) ৳ 1,099 -52% ৳ 2,300 5.0 (11)" [ref=e542] [cursor=pointer]:
+            - /url: /product/eq100_intelligent_ai_translation_headsetapp
+            - generic [ref=e543]:
+              - generic [ref=e544]:
+                - img "EQ100 Intelligent AI translation headset(App)" [ref=e549]
+                - img "Free Delivery" [ref=e551]
+              - generic [ref=e553]:
+                - heading "tagEQ100 Intelligent AI translation headset(App)" [level=4] [ref=e554]:
+                  - img "tag"
+                  - text: EQ100 Intelligent AI translation headset(App)
+                - generic [ref=e556]:
+                  - generic [ref=e557]:
+                    - paragraph [ref=e558]: ৳ 1,099
+                    - paragraph [ref=e559]: "-52%"
+                  - paragraph [ref=e560]: ৳ 2,300
+                - generic [ref=e561]:
+                  - generic [ref=e564]:
+                    - generic [ref=e565]:
+                      - img [ref=e566]
+                      - img [ref=e568]
+                      - img [ref=e570]
+                      - img [ref=e572]
+                      - img [ref=e574]
+                    - generic [ref=e576]:
+                      - img [ref=e577]
+                      - img [ref=e579]
+                      - img [ref=e581]
+                      - img [ref=e583]
+                      - img [ref=e585]
+                  - paragraph [ref=e588]: "5.0"
+                  - paragraph [ref=e589]: (11)
+          - link "Oraimo OEB-311 Necklace Lite ENC with Vibration Wireless Neckband Free Delivery tagOraimo OEB-311 Necklace Lite ENC with Vibration Wireless Neckband ৳ 1,212 -39% ৳ 1,990 4.8 (18)" [ref=e591] [cursor=pointer]:
+            - /url: /product/oraimo_oeb-311_necklace_lite_enc_with_vibration_wireless_neckband_1766472505157_8x7qki
+            - generic [ref=e592]:
+              - generic [ref=e593]:
+                - img "Oraimo OEB-311 Necklace Lite ENC with Vibration Wireless Neckband" [ref=e598]
+                - img "Free Delivery" [ref=e600]
+              - generic [ref=e602]:
+                - heading "tagOraimo OEB-311 Necklace Lite ENC with Vibration Wireless Neckband" [level=4] [ref=e603]:
+                  - img "tag"
+                  - text: Oraimo OEB-311 Necklace Lite ENC with Vibration Wireless Neckband
+                - generic [ref=e605]:
+                  - generic [ref=e606]:
+                    - paragraph [ref=e607]: ৳ 1,212
+                    - paragraph [ref=e608]: "-39%"
+                  - paragraph [ref=e609]: ৳ 1,990
+                - generic [ref=e610]:
+                  - generic [ref=e613]:
+                    - generic [ref=e614]:
+                      - img [ref=e615]
+                      - img [ref=e617]
+                      - img [ref=e619]
+                      - img [ref=e621]
+                      - img [ref=e623]
+                    - generic [ref=e625]:
+                      - img [ref=e626]
+                      - img [ref=e628]
+                      - img [ref=e630]
+                      - img [ref=e632]
+                      - img [ref=e634]
+                  - paragraph [ref=e637]: "4.8"
+                  - paragraph [ref=e638]: (18)
+          - link "Harpic Flushmatic Citrus 50 gm Free Delivery tagtagHarpic Flushmatic Citrus 50 gm ৳ 144 -13% ৳ 165 5.0 (3)" [ref=e640] [cursor=pointer]:
+            - /url: /product/harpic_flushmatic_citrus_50_gm_26338616686047_6ehj40
+            - generic [ref=e641]:
+              - generic [ref=e642]:
+                - img "Harpic Flushmatic Citrus 50 gm" [ref=e647]
+                - img "Free Delivery" [ref=e649]
+              - generic [ref=e651]:
+                - heading "tagtagHarpic Flushmatic Citrus 50 gm" [level=4] [ref=e652]:
+                  - img "tag" [ref=e653]
+                  - img "tag" [ref=e654]
+                  - text: Harpic Flushmatic Citrus 50 gm
+                - generic [ref=e656]:
+                  - generic [ref=e657]:
+                    - paragraph [ref=e658]: ৳ 144
+                    - paragraph [ref=e659]: "-13%"
+                  - paragraph [ref=e660]: ৳ 165
+                - generic [ref=e661]:
+                  - generic [ref=e664]:
+                    - generic [ref=e665]:
+                      - img [ref=e666]
+                      - img [ref=e668]
+                      - img [ref=e670]
+                      - img [ref=e672]
+                      - img [ref=e674]
+                    - generic [ref=e676]:
+                      - img [ref=e677]
+                      - img [ref=e679]
+                      - img [ref=e681]
+                      - img [ref=e683]
+                      - img [ref=e685]
+                  - paragraph [ref=e688]: "5.0"
+                  - paragraph [ref=e689]: (3)
+          - link "LIVE-K9 1.7M (5.7 Feet) Live Broadcastin Selfi Stand With Rechargable Light Selfe K9 Bluetooth 1.7M LED 4 in 1 Tripod LED Remote Control Tripod 170cm Selfie Stick Tripod Bluetooth LED Light Free Delivery tagtagLIVE-K9 1.7M (5.7 Feet) Live Broadcastin Selfi Stand With Rechargable Light Selfe K9 Bluetooth 1.7M LED 4 in 1 Tripod LED Remote Control Tripod 170cm Selfie Stick Tripod Bluetooth LED Light ৳ 499 -50% ৳ 999 5.0 (10)" [ref=e691] [cursor=pointer]:
+            - /url: /product/live-k9_17m_57_feet_live_broadcastin_selfi_stand_with_rechargable_light_selfe_k9_bluetooth_17m_led_4_in_1_tripod_led_remote_control_tripod_170cm_selfie_stick_tripod_bluetooth_led_light_1667557779233137_llpmh5
+            - generic [ref=e692]:
+              - generic [ref=e693]:
+                - img "LIVE-K9 1.7M (5.7 Feet) Live Broadcastin Selfi Stand With Rechargable Light Selfe K9 Bluetooth 1.7M LED 4 in 1 Tripod LED Remote Control Tripod 170cm Selfie Stick Tripod Bluetooth LED Light" [ref=e698]
+                - img "Free Delivery" [ref=e700]
+              - generic [ref=e702]:
+                - heading "tagtagLIVE-K9 1.7M (5.7 Feet) Live Broadcastin Selfi Stand With Rechargable Light Selfe K9 Bluetooth 1.7M LED 4 in 1 Tripod LED Remote Control Tripod 170cm Selfie Stick Tripod Bluetooth LED Light" [level=4] [ref=e703]:
+                  - img "tag" [ref=e704]
+                  - img "tag" [ref=e705]
+                  - text: LIVE-K9 1.7M (5.7 Feet) Live Broadcastin Selfi Stand With Rechargable Light Selfe K9 Bluetooth 1.7M LED 4 in 1 Tripod LED Remote Control Tripod 170cm Selfie Stick Tripod Bluetooth LED Light
+                - generic [ref=e707]:
+                  - generic [ref=e708]:
+                    - paragraph [ref=e709]: ৳ 499
+                    - paragraph [ref=e710]: "-50%"
+                  - paragraph [ref=e711]: ৳ 999
+                - generic [ref=e712]:
+                  - generic [ref=e715]:
+                    - generic [ref=e716]:
+                      - img [ref=e717]
+                      - img [ref=e719]
+                      - img [ref=e721]
+                      - img [ref=e723]
+                      - img [ref=e725]
+                    - generic [ref=e727]:
+                      - img [ref=e728]
+                      - img [ref=e730]
+                      - img [ref=e732]
+                      - img [ref=e734]
+                      - img [ref=e736]
+                  - paragraph [ref=e739]: "5.0"
+                  - paragraph [ref=e740]: (10)
+          - link "Chinese Synthetic Curtain For Door And Windows, Porda ( Parda) -( 4 Kuchi -1Pis) From - Suba International. Free Delivery tagChinese Synthetic Curtain For Door And Windows, Porda ( Parda) -( 4 Kuchi -1Pis) From - Suba International. ৳ 165 -24% ৳ 218 3.5 (2)" [ref=e742] [cursor=pointer]:
+            - /url: /product/chinese_synthetic_curtain_for_door_and_windows_porda_parda_-_4_kuchi_-1pis_from_-_suba_international_1139392523506026_32gfz2
+            - generic [ref=e743]:
+              - generic [ref=e744]:
+                - img "Chinese Synthetic Curtain For Door And Windows, Porda ( Parda) -( 4 Kuchi -1Pis) From - Suba International." [ref=e749]
+                - img "Free Delivery" [ref=e751]
+              - generic [ref=e753]:
+                - heading "tagChinese Synthetic Curtain For Door And Windows, Porda ( Parda) -( 4 Kuchi -1Pis) From - Suba International." [level=4] [ref=e754]:
+                  - img "tag"
+                  - text: Chinese Synthetic Curtain For Door And Windows, Porda ( Parda) -( 4 Kuchi -1Pis) From - Suba International.
+                - generic [ref=e756]:
+                  - generic [ref=e757]:
+                    - paragraph [ref=e758]: ৳ 165
+                    - paragraph [ref=e759]: "-24%"
+                  - paragraph [ref=e760]: ৳ 218
+                - generic [ref=e761]:
+                  - generic [ref=e764]:
+                    - generic [ref=e765]:
+                      - img [ref=e766]
+                      - img [ref=e768]
+                      - img [ref=e770]
+                      - img [ref=e772]
+                      - img [ref=e774]
+                    - generic [ref=e776]:
+                      - img [ref=e777]
+                      - img [ref=e779]
+                      - img [ref=e781]
+                      - img [ref=e783]
+                      - img [ref=e785]
+                  - paragraph [ref=e788]: "3.5"
+                  - paragraph [ref=e789]: (2)
+          - link "Logitech K120 Wired Keyboard for Windows, USB Plug-and-Play, Full-Size, Spill Resistant, Curved Space Bar PC/Laptop - Bangla Layout Free Delivery tagLogitech K120 Wired Keyboard for Windows, USB Plug-and-Play, Full-Size, Spill Resistant, Curved Space Bar PC/Laptop - Bangla Layout ৳ 750 -6% ৳ 799 5.0 (15)" [ref=e791] [cursor=pointer]:
+            - /url: /product/logitech_k120_wired_keyboard_for_windows_usb_plug-and-play_full-size_spill_resistant_curved_space_bar_pclaptop_-_bangla_layout_4188131425305752_9aawl9
+            - generic [ref=e792]:
+              - generic [ref=e793]:
+                - img "Logitech K120 Wired Keyboard for Windows, USB Plug-and-Play, Full-Size, Spill Resistant, Curved Space Bar PC/Laptop - Bangla Layout" [ref=e798]
+                - img "Free Delivery" [ref=e800]
+              - generic [ref=e802]:
+                - heading "tagLogitech K120 Wired Keyboard for Windows, USB Plug-and-Play, Full-Size, Spill Resistant, Curved Space Bar PC/Laptop - Bangla Layout" [level=4] [ref=e803]:
+                  - img "tag" [ref=e804]
+                  - text: Logitech K120 Wired Keyboard for Windows, USB Plug-and-Play, Full-Size, Spill Resistant, Curved Space Bar PC/Laptop - Bangla Layout
+                - generic [ref=e806]:
+                  - generic [ref=e807]:
+                    - paragraph [ref=e808]: ৳ 750
+                    - paragraph [ref=e809]: "-6%"
+                  - paragraph [ref=e810]: ৳ 799
+                - generic [ref=e811]:
+                  - generic [ref=e814]:
+                    - generic [ref=e815]:
+                      - img [ref=e816]
+                      - img [ref=e818]
+                      - img [ref=e820]
+                      - img [ref=e822]
+                      - img [ref=e824]
+                    - generic [ref=e826]:
+                      - img [ref=e827]
+                      - img [ref=e829]
+                      - img [ref=e831]
+                      - img [ref=e833]
+                      - img [ref=e835]
+                  - paragraph [ref=e838]: "5.0"
+                  - paragraph [ref=e839]: (15)
+          - link "Y80 Ultra Smartwatch Free Delivery tagY80 Ultra Smartwatch ৳ 799 -50% ৳ 1,600 4.7 (14)" [ref=e841] [cursor=pointer]:
+            - /url: /product/y80_ultra_smartwatch_with_free_8_strap
+            - generic [ref=e842]:
+              - generic [ref=e843]:
+                - img "Y80 Ultra Smartwatch" [ref=e848]
+                - img "Free Delivery" [ref=e850]
+              - generic [ref=e852]:
+                - heading "tagY80 Ultra Smartwatch" [level=4] [ref=e853]:
+                  - img "tag"
+                  - text: Y80 Ultra Smartwatch
+                - generic [ref=e855]:
+                  - generic [ref=e856]:
+                    - paragraph [ref=e857]: ৳ 799
+                    - paragraph [ref=e858]: "-50%"
+                  - paragraph [ref=e859]: ৳ 1,600
+                - generic [ref=e860]:
+                  - generic [ref=e863]:
+                    - generic [ref=e864]:
+                      - img [ref=e865]
+                      - img [ref=e867]
+                      - img [ref=e869]
+                      - img [ref=e871]
+                      - img [ref=e873]
+                    - generic [ref=e875]:
+                      - img [ref=e876]
+                      - img [ref=e878]
+                      - img [ref=e880]
+                      - img [ref=e882]
+                      - img [ref=e884]
+                  - paragraph [ref=e887]: "4.7"
+                  - paragraph [ref=e888]: (14)
+          - link "Aluminum Alloy Adjustable Bike Mobile Phone Holder Full Metal bike Motorcycle Mobile Holder Phone Bracket Mountain Bike Mobile Stand C2 Free Delivery Aluminum Alloy Adjustable Bike Mobile Phone Holder Full Metal bike Motorcycle Mobile Holder Phone Bracket Mountain Bike Mobile Stand C2 ৳ 220 -55% ৳ 490 4.1 (9)" [ref=e890] [cursor=pointer]:
+            - /url: /product/aluminum_alloy_adjustable_bike_mobile_phone_holder_full_metal_bike_motorcycle_mobile_holder_phone_bracket_mountain_bike_mobile_stand_c2
+            - generic [ref=e891]:
+              - generic [ref=e892]:
+                - img "Aluminum Alloy Adjustable Bike Mobile Phone Holder Full Metal bike Motorcycle Mobile Holder Phone Bracket Mountain Bike Mobile Stand C2" [ref=e897]
+                - img "Free Delivery" [ref=e899]
+              - generic [ref=e901]:
+                - heading "Aluminum Alloy Adjustable Bike Mobile Phone Holder Full Metal bike Motorcycle Mobile Holder Phone Bracket Mountain Bike Mobile Stand C2" [level=4] [ref=e902]
+                - generic [ref=e904]:
+                  - generic [ref=e905]:
+                    - paragraph [ref=e906]: ৳ 220
+                    - paragraph [ref=e907]: "-55%"
+                  - paragraph [ref=e908]: ৳ 490
+                - generic [ref=e909]:
+                  - generic [ref=e912]:
+                    - generic [ref=e913]:
+                      - img [ref=e914]
+                      - img [ref=e916]
+                      - img [ref=e918]
+                      - img [ref=e920]
+                      - img [ref=e922]
+                    - generic [ref=e924]:
+                      - img [ref=e925]
+                      - img [ref=e927]
+                      - img [ref=e929]
+                      - img [ref=e931]
+                      - img [ref=e933]
+                  - paragraph [ref=e936]: "4.1"
+                  - paragraph [ref=e937]: (9)
+          - link "(Buy 4 Get 1 Free) Aer Power Pocket bathroom Fragrance Sea Breeze 50g Free Delivery tagtag(Buy 4 Get 1 Free) Aer Power Pocket bathroom Fragrance Sea Breeze 50g ৳ 276 -8% ৳ 300 5.0 (2)" [ref=e939] [cursor=pointer]:
+            - /url: /product/buy_4_get_1_free_aer_power_pocket_bathroom_fragrance_sea_breeze_50g_463472251859831_pjvot2
+            - generic [ref=e940]:
+              - generic [ref=e941]:
+                - img "(Buy 4 Get 1 Free) Aer Power Pocket bathroom Fragrance Sea Breeze 50g" [ref=e946]
+                - img "Free Delivery" [ref=e948]
+              - generic [ref=e950]:
+                - heading "tagtag(Buy 4 Get 1 Free) Aer Power Pocket bathroom Fragrance Sea Breeze 50g" [level=4] [ref=e951]:
+                  - img "tag" [ref=e952]
+                  - img "tag" [ref=e953]
+                  - text: (Buy 4 Get 1 Free) Aer Power Pocket bathroom Fragrance Sea Breeze 50g
+                - generic [ref=e955]:
+                  - generic [ref=e956]:
+                    - paragraph [ref=e957]: ৳ 276
+                    - paragraph [ref=e958]: "-8%"
+                  - paragraph [ref=e959]: ৳ 300
+                - generic [ref=e960]:
+                  - generic [ref=e963]:
+                    - generic [ref=e964]:
+                      - img [ref=e965]
+                      - img [ref=e967]
+                      - img [ref=e969]
+                      - img [ref=e971]
+                      - img [ref=e973]
+                    - generic [ref=e975]:
+                      - img [ref=e976]
+                      - img [ref=e978]
+                      - img [ref=e980]
+                      - img [ref=e982]
+                      - img [ref=e984]
+                  - paragraph [ref=e987]: "5.0"
+                  - paragraph [ref=e988]: (2)
+          - link "03-H2 High Quality Metal bike Mobile Holder Motorcycle Mobile Phone Bracket Mountain Bike Aluminum Alloy Mobile Phone Holder Mobile Stand Free Delivery 03-H2 High Quality Metal bike Mobile Holder Motorcycle Mobile Phone Bracket Mountain Bike Aluminum Alloy Mobile Phone Holder Mobile Stand ৳ 304 -24% ৳ 400 5.0 (16)" [ref=e990] [cursor=pointer]:
+            - /url: /product/03-h2_high_quality_metal_bike_mobile_holder_motorcycle_mobile_phone_bracket_mountain_bike_aluminum_alloy_mobile_phone_holder_mobile_stand_3189155064970634_kfee68
+            - generic [ref=e991]:
+              - generic [ref=e992]:
+                - img "03-H2 High Quality Metal bike Mobile Holder Motorcycle Mobile Phone Bracket Mountain Bike Aluminum Alloy Mobile Phone Holder Mobile Stand" [ref=e997]
+                - img "Free Delivery" [ref=e999]
+              - generic [ref=e1001]:
+                - heading "03-H2 High Quality Metal bike Mobile Holder Motorcycle Mobile Phone Bracket Mountain Bike Aluminum Alloy Mobile Phone Holder Mobile Stand" [level=4] [ref=e1002]
+                - generic [ref=e1004]:
+                  - generic [ref=e1005]:
+                    - paragraph [ref=e1006]: ৳ 304
+                    - paragraph [ref=e1007]: "-24%"
+                  - paragraph [ref=e1008]: ৳ 400
+                - generic [ref=e1009]:
+                  - generic [ref=e1012]:
+                    - generic [ref=e1013]:
+                      - img [ref=e1014]
+                      - img [ref=e1016]
+                      - img [ref=e1018]
+                      - img [ref=e1020]
+                      - img [ref=e1022]
+                    - generic [ref=e1024]:
+                      - img [ref=e1025]
+                      - img [ref=e1027]
+                      - img [ref=e1029]
+                      - img [ref=e1031]
+                      - img [ref=e1033]
+                  - paragraph [ref=e1036]: "5.0"
+                  - paragraph [ref=e1037]: (16)
+          - link "12v Battery Charger 10A Full Auto & Digital Display - Intelligent Battery Charger for Car Truck Autorickshaw Bikes IPS Industrial Battery Free Delivery 12v Battery Charger 10A Full Auto & Digital Display - Intelligent Battery Charger for Car Truck Autorickshaw Bikes IPS Industrial Battery ৳ 1,164 -8% ৳ 1,261 5.0 (3)" [ref=e1039] [cursor=pointer]:
+            - /url: /product/12v_battery_charger_10a_full_auto_digital_display_-_intelligent_battery_charger_for_car_truck_autorickshaw_bikes_ips_industrial_battery_1824555969839269_0zp75z
+            - generic [ref=e1040]:
+              - generic [ref=e1041]:
+                - img "12v Battery Charger 10A Full Auto & Digital Display - Intelligent Battery Charger for Car Truck Autorickshaw Bikes IPS Industrial Battery" [ref=e1046]
+                - img "Free Delivery" [ref=e1048]
+              - generic [ref=e1050]:
+                - heading "12v Battery Charger 10A Full Auto & Digital Display - Intelligent Battery Charger for Car Truck Autorickshaw Bikes IPS Industrial Battery" [level=4] [ref=e1051]
+                - generic [ref=e1053]:
+                  - generic [ref=e1054]:
+                    - paragraph [ref=e1055]: ৳ 1,164
+                    - paragraph [ref=e1056]: "-8%"
+                  - paragraph [ref=e1057]: ৳ 1,261
+                - generic [ref=e1058]:
+                  - generic [ref=e1061]:
+                    - generic [ref=e1062]:
+                      - img [ref=e1063]
+                      - img [ref=e1065]
+                      - img [ref=e1067]
+                      - img [ref=e1069]
+                      - img [ref=e1071]
+                    - generic [ref=e1073]:
+                      - img [ref=e1074]
+                      - img [ref=e1076]
+                      - img [ref=e1078]
+                      - img [ref=e1080]
+                      - img [ref=e1082]
+                  - paragraph [ref=e1085]: "5.0"
+                  - paragraph [ref=e1086]: (3)
+          - link "Anker Soundcore R60i NC TWS Free Delivery Anker Soundcore R60i NC TWS ৳ 3,029 -13% ৳ 3,499 5.0 (4)" [ref=e1088] [cursor=pointer]:
+            - /url: /product/anker_soundcore_r60i_nc_tws_2212710744158663_x1ehbn
+            - generic [ref=e1089]:
+              - generic [ref=e1090]:
+                - img "Anker Soundcore R60i NC TWS" [ref=e1095]
+                - img "Free Delivery" [ref=e1097]
+              - generic [ref=e1099]:
+                - heading "Anker Soundcore R60i NC TWS" [level=4] [ref=e1100]
+                - generic [ref=e1102]:
+                  - generic [ref=e1103]:
+                    - paragraph [ref=e1104]: ৳ 3,029
+                    - paragraph [ref=e1105]: "-13%"
+                  - paragraph [ref=e1106]: ৳ 3,499
+                - generic [ref=e1107]:
+                  - generic [ref=e1110]:
+                    - generic [ref=e1111]:
+                      - img [ref=e1112]
+                      - img [ref=e1114]
+                      - img [ref=e1116]
+                      - img [ref=e1118]
+                      - img [ref=e1120]
+                    - generic [ref=e1122]:
+                      - img [ref=e1123]
+                      - img [ref=e1125]
+                      - img [ref=e1127]
+                      - img [ref=e1129]
+                      - img [ref=e1131]
+                  - paragraph [ref=e1134]: "5.0"
+                  - paragraph [ref=e1135]: (4)
+          - link "Fresh Mustard Oil - 500ml Free Delivery tagtagFresh Mustard Oil - 500ml ৳ 148 -18% ৳ 180 5.0 (121)" [ref=e1137] [cursor=pointer]:
+            - /url: /product/fresh_mustard_oil_-_500ml_816907788079679_kaktv1
+            - generic [ref=e1138]:
+              - generic [ref=e1139]:
+                - img "Fresh Mustard Oil - 500ml" [ref=e1144]
+                - img "Free Delivery" [ref=e1146]
+              - generic [ref=e1148]:
+                - heading "tagtagFresh Mustard Oil - 500ml" [level=4] [ref=e1149]:
+                  - img "tag" [ref=e1150]
+                  - img "tag" [ref=e1151]
+                  - text: Fresh Mustard Oil - 500ml
+                - generic [ref=e1153]:
+                  - generic [ref=e1154]:
+                    - paragraph [ref=e1155]: ৳ 148
+                    - paragraph [ref=e1156]: "-18%"
+                  - paragraph [ref=e1157]: ৳ 180
+                - generic [ref=e1158]:
+                  - generic [ref=e1161]:
+                    - generic [ref=e1162]:
+                      - img [ref=e1163]
+                      - img [ref=e1165]
+                      - img [ref=e1167]
+                      - img [ref=e1169]
+                      - img [ref=e1171]
+                    - generic [ref=e1173]:
+                      - img [ref=e1174]
+                      - img [ref=e1176]
+                      - img [ref=e1178]
+                      - img [ref=e1180]
+                      - img [ref=e1182]
+                  - paragraph [ref=e1185]: "5.0"
+                  - paragraph [ref=e1186]: (121)
+          - link "Radhuni Coriander Powder - 500gm Free Delivery tagtagRadhuni Coriander Powder - 500gm ৳ 220 -8% ৳ 240 5.0 (28)" [ref=e1188] [cursor=pointer]:
+            - /url: /product/radhuni_coriander_powder_-_500gm_1334969035919594_n9fd65
+            - generic [ref=e1189]:
+              - generic [ref=e1190]:
+                - img "Radhuni Coriander Powder - 500gm" [ref=e1195]
+                - img "Free Delivery" [ref=e1197]
+              - generic [ref=e1199]:
+                - heading "tagtagRadhuni Coriander Powder - 500gm" [level=4] [ref=e1200]:
+                  - img "tag" [ref=e1201]
+                  - img "tag" [ref=e1202]
+                  - text: Radhuni Coriander Powder - 500gm
+                - generic [ref=e1204]:
+                  - generic [ref=e1205]:
+                    - paragraph [ref=e1206]: ৳ 220
+                    - paragraph [ref=e1207]: "-8%"
+                  - paragraph [ref=e1208]: ৳ 240
+                - generic [ref=e1209]:
+                  - generic [ref=e1212]:
+                    - generic [ref=e1213]:
+                      - img [ref=e1214]
+                      - img [ref=e1216]
+                      - img [ref=e1218]
+                      - img [ref=e1220]
+                      - img [ref=e1222]
+                    - generic [ref=e1224]:
+                      - img [ref=e1225]
+                      - img [ref=e1227]
+                      - img [ref=e1229]
+                      - img [ref=e1231]
+                      - img [ref=e1233]
+                  - paragraph [ref=e1236]: "5.0"
+                  - paragraph [ref=e1237]: (28)
+          - link "Parachute Hair Oil Advansed Aloe Vera Enriched Coconut 250ml Pack of 2 (250ml x 2) Free Delivery tagtagParachute Hair Oil Advansed Aloe Vera Enriched Coconut 250ml Pack of 2 (250ml x 2) ৳ 561 -12% ৳ 640 5.0 (27)" [ref=e1239] [cursor=pointer]:
+            - /url: /product/parachute_hair_oil_advansed_aloe_vera_enriched_coconut_250ml_pack_of_2_250ml_x_2_1656002904613211_4oyi10
+            - generic [ref=e1240]:
+              - generic [ref=e1241]:
+                - img "Parachute Hair Oil Advansed Aloe Vera Enriched Coconut 250ml Pack of 2 (250ml x 2)" [ref=e1246]
+                - img "Free Delivery" [ref=e1248]
+              - generic [ref=e1250]:
+                - heading "tagtagParachute Hair Oil Advansed Aloe Vera Enriched Coconut 250ml Pack of 2 (250ml x 2)" [level=4] [ref=e1251]:
+                  - img "tag" [ref=e1252]
+                  - img "tag" [ref=e1253]
+                  - text: Parachute Hair Oil Advansed Aloe Vera Enriched Coconut 250ml Pack of 2 (250ml x 2)
+                - generic [ref=e1255]:
+                  - generic [ref=e1256]:
+                    - paragraph [ref=e1257]: ৳ 561
+                    - paragraph [ref=e1258]: "-12%"
+                  - paragraph [ref=e1259]: ৳ 640
+                - generic [ref=e1260]:
+                  - generic [ref=e1263]:
+                    - generic [ref=e1264]:
+                      - img [ref=e1265]
+                      - img [ref=e1267]
+                      - img [ref=e1269]
+                      - img [ref=e1271]
+                      - img [ref=e1273]
+                    - generic [ref=e1275]:
+                      - img [ref=e1276]
+                      - img [ref=e1278]
+                      - img [ref=e1280]
+                      - img [ref=e1282]
+                      - img [ref=e1284]
+                  - paragraph [ref=e1287]: "5.0"
+                  - paragraph [ref=e1288]: (27)
+          - link "Tata Tea Gold 200 g Free Delivery tagtagTata Tea Gold 200 g ৳ 108 -28% ৳ 150 4.8 (28)" [ref=e1290] [cursor=pointer]:
+            - /url: /product/tata_tea_gold_200g_1762922122842_enelhb
+            - generic [ref=e1291]:
+              - generic [ref=e1292]:
+                - img "Tata Tea Gold 200 g" [ref=e1297]
+                - img "Free Delivery" [ref=e1299]
+              - generic [ref=e1301]:
+                - heading "tagtagTata Tea Gold 200 g" [level=4] [ref=e1302]:
+                  - img "tag" [ref=e1303]
+                  - img "tag" [ref=e1304]
+                  - text: Tata Tea Gold 200 g
+                - generic [ref=e1306]:
+                  - generic [ref=e1307]:
+                    - paragraph [ref=e1308]: ৳ 108
+                    - paragraph [ref=e1309]: "-28%"
+                  - paragraph [ref=e1310]: ৳ 150
+                - generic [ref=e1311]:
+                  - generic [ref=e1314]:
+                    - generic [ref=e1315]:
+                      - img [ref=e1316]
+                      - img [ref=e1318]
+                      - img [ref=e1320]
+                      - img [ref=e1322]
+                      - img [ref=e1324]
+                    - generic [ref=e1326]:
+                      - img [ref=e1327]
+                      - img [ref=e1329]
+                      - img [ref=e1331]
+                      - img [ref=e1333]
+                      - img [ref=e1335]
+                  - paragraph [ref=e1338]: "4.8"
+                  - paragraph [ref=e1339]: (28)
+          - link "(LEVELEX) LR 2018 Rechargeable Folding Table Fan with Light Multifunctional Cute fan Free Delivery (LEVELEX) LR 2018 Rechargeable Folding Table Fan with Light Multifunctional Cute fan ৳ 799 -53% ৳ 1,700 4.9 (17)" [ref=e1341] [cursor=pointer]:
+            - /url: /product/levelex_lr_2018_rechargeable_folding_table_fan_with_light_multifunctional_cute_fan_5786935696122634_hgbc99
+            - generic [ref=e1342]:
+              - generic [ref=e1343]:
+                - img "(LEVELEX) LR 2018 Rechargeable Folding Table Fan with Light Multifunctional Cute fan" [ref=e1348]
+                - img "Free Delivery" [ref=e1350]
+              - generic [ref=e1352]:
+                - heading "(LEVELEX) LR 2018 Rechargeable Folding Table Fan with Light Multifunctional Cute fan" [level=4] [ref=e1353]
+                - generic [ref=e1355]:
+                  - generic [ref=e1356]:
+                    - paragraph [ref=e1357]: ৳ 799
+                    - paragraph [ref=e1358]: "-53%"
+                  - paragraph [ref=e1359]: ৳ 1,700
+                - generic [ref=e1360]:
+                  - generic [ref=e1363]:
+                    - generic [ref=e1364]:
+                      - img [ref=e1365]
+                      - img [ref=e1367]
+                      - img [ref=e1369]
+                      - img [ref=e1371]
+                      - img [ref=e1373]
+                    - generic [ref=e1375]:
+                      - img [ref=e1376]
+                      - img [ref=e1378]
+                      - img [ref=e1380]
+                      - img [ref=e1382]
+                      - img [ref=e1384]
+                  - paragraph [ref=e1387]: "4.9"
+                  - paragraph [ref=e1388]: (17)
+          - link "20W LED Light Bulb with Driver – 5 Pcs Combo Pack Free Delivery 20W LED Light Bulb with Driver – 5 Pcs Combo Pack ৳ 399 -67% ৳ 1,200 4.6 (11)" [ref=e1390] [cursor=pointer]:
+            - /url: /product/high_quality_20_watt_led_light_bulb_with_led_driver_led_light_bulb_5_pcs_combo_pack_3335864434627070_po9fea
+            - generic [ref=e1391]:
+              - generic [ref=e1392]:
+                - img "20W LED Light Bulb with Driver – 5 Pcs Combo Pack" [ref=e1397]
+                - img "Free Delivery" [ref=e1399]
+              - generic [ref=e1401]:
+                - heading "20W LED Light Bulb with Driver – 5 Pcs Combo Pack" [level=4] [ref=e1402]
+                - generic [ref=e1404]:
+                  - generic [ref=e1405]:
+                    - paragraph [ref=e1406]: ৳ 399
+                    - paragraph [ref=e1407]: "-67%"
+                  - paragraph [ref=e1408]: ৳ 1,200
+                - generic [ref=e1409]:
+                  - generic [ref=e1412]:
+                    - generic [ref=e1413]:
+                      - img [ref=e1414]
+                      - img [ref=e1416]
+                      - img [ref=e1418]
+                      - img [ref=e1420]
+                      - img [ref=e1422]
+                    - generic [ref=e1424]:
+                      - img [ref=e1425]
+                      - img [ref=e1427]
+                      - img [ref=e1429]
+                      - img [ref=e1431]
+                      - img [ref=e1433]
+                  - paragraph [ref=e1436]: "4.6"
+                  - paragraph [ref=e1437]: (11)
+          - link "Stylish Premium Sunglasses for Men Free Delivery Stylish Premium Sunglasses for Men ৳ 320 -64% ৳ 900 4.7 (6)" [ref=e1439] [cursor=pointer]:
+            - /url: /product/indispensable_-quality_and_durablity_-high_quality_very_stylish_sunglass_for_men-_innovative_remarkable_-_disclose_styles_luxe_3272254210488391_ihawko
+            - generic [ref=e1440]:
+              - generic [ref=e1441]:
+                - img "Stylish Premium Sunglasses for Men" [ref=e1446]
+                - img "Free Delivery" [ref=e1448]
+              - generic [ref=e1450]:
+                - heading "Stylish Premium Sunglasses for Men" [level=4] [ref=e1451]
+                - generic [ref=e1453]:
+                  - generic [ref=e1454]:
+                    - paragraph [ref=e1455]: ৳ 320
+                    - paragraph [ref=e1456]: "-64%"
+                  - paragraph [ref=e1457]: ৳ 900
+                - generic [ref=e1458]:
+                  - generic [ref=e1461]:
+                    - generic [ref=e1462]:
+                      - img [ref=e1463]
+                      - img [ref=e1465]
+                      - img [ref=e1467]
+                      - img [ref=e1469]
+                      - img [ref=e1471]
+                    - generic [ref=e1473]:
+                      - img [ref=e1474]
+                      - img [ref=e1476]
+                      - img [ref=e1478]
+                      - img [ref=e1480]
+                      - img [ref=e1482]
+                  - paragraph [ref=e1485]: "4.7"
+                  - paragraph [ref=e1486]: (6)
+          - link "Farmer's Gold Lachha Shemai Premium 400gm Free Delivery tagFarmer's Gold Lachha Shemai Premium 400gm ৳ 160 -6% ৳ 170 5.0 (12)" [ref=e1488] [cursor=pointer]:
+            - /url: /product/farmers_gold_lachha_shemai_premium_369372561044201_prbyng
+            - generic [ref=e1489]:
+              - generic [ref=e1490]:
+                - img "Farmer's Gold Lachha Shemai Premium 400gm" [ref=e1495]
+                - img "Free Delivery" [ref=e1497]
+              - generic [ref=e1499]:
+                - heading "tagFarmer's Gold Lachha Shemai Premium 400gm" [level=4] [ref=e1500]:
+                  - img "tag" [ref=e1501]
+                  - text: Farmer's Gold Lachha Shemai Premium 400gm
+                - generic [ref=e1503]:
+                  - generic [ref=e1504]:
+                    - paragraph [ref=e1505]: ৳ 160
+                    - paragraph [ref=e1506]: "-6%"
+                  - paragraph [ref=e1507]: ৳ 170
+                - generic [ref=e1508]:
+                  - generic [ref=e1511]:
+                    - generic [ref=e1512]:
+                      - img [ref=e1513]
+                      - img [ref=e1515]
+                      - img [ref=e1517]
+                      - img [ref=e1519]
+                      - img [ref=e1521]
+                    - generic [ref=e1523]:
+                      - img [ref=e1524]
+                      - img [ref=e1526]
+                      - img [ref=e1528]
+                      - img [ref=e1530]
+                      - img [ref=e1532]
+                  - paragraph [ref=e1535]: "5.0"
+                  - paragraph [ref=e1536]: (12)
+          - link "Bashundhara Kitchen Towel 2 Roll Free Delivery tagtagBashundhara Kitchen Towel 2 Roll ৳ 125 -22% ৳ 160 5.0 (58)" [ref=e1538] [cursor=pointer]:
+            - /url: /product/bashundhara_kitchen_towel_2_roll_787261428581427_4xt38o
+            - generic [ref=e1539]:
+              - generic [ref=e1540]:
+                - img "Bashundhara Kitchen Towel 2 Roll" [ref=e1545]
+                - img "Free Delivery" [ref=e1547]
+              - generic [ref=e1549]:
+                - heading "tagtagBashundhara Kitchen Towel 2 Roll" [level=4] [ref=e1550]:
+                  - img "tag" [ref=e1551]
+                  - img "tag" [ref=e1552]
+                  - text: Bashundhara Kitchen Towel 2 Roll
+                - generic [ref=e1554]:
+                  - generic [ref=e1555]:
+                    - paragraph [ref=e1556]: ৳ 125
+                    - paragraph [ref=e1557]: "-22%"
+                  - paragraph [ref=e1558]: ৳ 160
+                - generic [ref=e1559]:
+                  - generic [ref=e1562]:
+                    - generic [ref=e1563]:
+                      - img [ref=e1564]
+                      - img [ref=e1566]
+                      - img [ref=e1568]
+                      - img [ref=e1570]
+                      - img [ref=e1572]
+                    - generic [ref=e1574]:
+                      - img [ref=e1575]
+                      - img [ref=e1577]
+                      - img [ref=e1579]
+                      - img [ref=e1581]
+                      - img [ref=e1583]
+                  - paragraph [ref=e1586]: "5.0"
+                  - paragraph [ref=e1587]: (58)
+          - link "Harpic Toilet Cleaning Liquid 750 ml Combo Free Delivery tagtagHarpic Toilet Cleaning Liquid 750 ml Combo ৳ 288 -20% ৳ 360 5.0 (79)" [ref=e1589] [cursor=pointer]:
+            - /url: /product/harpic_toilet_cleaning_liquid_750ml_x_2_26338642983647_63lcuo
+            - generic [ref=e1590]:
+              - generic [ref=e1591]:
+                - img "Harpic Toilet Cleaning Liquid 750 ml Combo" [ref=e1596]
+                - img "Free Delivery" [ref=e1598]
+              - generic [ref=e1600]:
+                - heading "tagtagHarpic Toilet Cleaning Liquid 750 ml Combo" [level=4] [ref=e1601]:
+                  - img "tag" [ref=e1602]
+                  - img "tag" [ref=e1603]
+                  - text: Harpic Toilet Cleaning Liquid 750 ml Combo
+                - generic [ref=e1605]:
+                  - generic [ref=e1606]:
+                    - paragraph [ref=e1607]: ৳ 288
+                    - paragraph [ref=e1608]: "-20%"
+                  - paragraph [ref=e1609]: ৳ 360
+                - generic [ref=e1610]:
+                  - generic [ref=e1613]:
+                    - generic [ref=e1614]:
+                      - img [ref=e1615]
+                      - img [ref=e1617]
+                      - img [ref=e1619]
+                      - img [ref=e1621]
+                      - img [ref=e1623]
+                    - generic [ref=e1625]:
+                      - img [ref=e1626]
+                      - img [ref=e1628]
+                      - img [ref=e1630]
+                      - img [ref=e1632]
+                      - img [ref=e1634]
+                  - paragraph [ref=e1637]: "5.0"
+                  - paragraph [ref=e1638]: (79)
+          - link "Pepsodent Toothpaste Sensitive Expert Gum Care 140g (Toothbrush Free) Free Delivery tagtagPepsodent Toothpaste Sensitive Expert Gum Care 140g (Toothbrush Free) ৳ 217 -13% ৳ 250 5.0 (38)" [ref=e1640] [cursor=pointer]:
+            - /url: /product/pepsodent_toothpaste_sensitive_expert_gum_care_140g_toothbrush_free_3545349044727050_476rrr
+            - generic [ref=e1641]:
+              - generic [ref=e1642]:
+                - img "Pepsodent Toothpaste Sensitive Expert Gum Care 140g (Toothbrush Free)" [ref=e1647]
+                - img "Free Delivery" [ref=e1649]
+              - generic [ref=e1651]:
+                - heading "tagtagPepsodent Toothpaste Sensitive Expert Gum Care 140g (Toothbrush Free)" [level=4] [ref=e1652]:
+                  - img "tag" [ref=e1653]
+                  - img "tag" [ref=e1654]
+                  - text: Pepsodent Toothpaste Sensitive Expert Gum Care 140g (Toothbrush Free)
+                - generic [ref=e1656]:
+                  - generic [ref=e1657]:
+                    - paragraph [ref=e1658]: ৳ 217
+                    - paragraph [ref=e1659]: "-13%"
+                  - paragraph [ref=e1660]: ৳ 250
+                - generic [ref=e1661]:
+                  - generic [ref=e1664]:
+                    - generic [ref=e1665]:
+                      - img [ref=e1666]
+                      - img [ref=e1668]
+                      - img [ref=e1670]
+                      - img [ref=e1672]
+                      - img [ref=e1674]
+                    - generic [ref=e1676]:
+                      - img [ref=e1677]
+                      - img [ref=e1679]
+                      - img [ref=e1681]
+                      - img [ref=e1683]
+                      - img [ref=e1685]
+                  - paragraph [ref=e1688]: "5.0"
+                  - paragraph [ref=e1689]: (38)
+          - link "Parachute Baby Face Cream – 50g Free Delivery tagtagParachute Baby Face Cream – 50g ৳ 102 -36% ৳ 160 4.9 (23)" [ref=e1691] [cursor=pointer]:
+            - /url: /product/parachute_just_for_baby_-_face_cream_50g_502790239768652_ly38oy
+            - generic [ref=e1692]:
+              - generic [ref=e1693]:
+                - img "Parachute Baby Face Cream – 50g" [ref=e1698]
+                - img "Free Delivery" [ref=e1700]
+              - generic [ref=e1702]:
+                - heading "tagtagParachute Baby Face Cream – 50g" [level=4] [ref=e1703]:
+                  - img "tag" [ref=e1704]
+                  - img "tag" [ref=e1705]
+                  - text: Parachute Baby Face Cream – 50g
+                - generic [ref=e1707]:
+                  - generic [ref=e1708]:
+                    - paragraph [ref=e1709]: ৳ 102
+                    - paragraph [ref=e1710]: "-36%"
+                  - paragraph [ref=e1711]: ৳ 160
+                - generic [ref=e1712]:
+                  - generic [ref=e1715]:
+                    - generic [ref=e1716]:
+                      - img [ref=e1717]
+                      - img [ref=e1719]
+                      - img [ref=e1721]
+                      - img [ref=e1723]
+                      - img [ref=e1725]
+                    - generic [ref=e1727]:
+                      - img [ref=e1728]
+                      - img [ref=e1730]
+                      - img [ref=e1732]
+                      - img [ref=e1734]
+                      - img [ref=e1736]
+                  - paragraph [ref=e1739]: "4.9"
+                  - paragraph [ref=e1740]: (23)
+          - link "Pran Chinigura Aromatic Rice – 2kg Free Delivery tagtagPran Chinigura Aromatic Rice – 2kg ৳ 350 -5% ৳ 370 4.9 (40)" [ref=e1742] [cursor=pointer]:
+            - /url: /product/pran_chinigura_aromatic_rice_2kg_6437279492166_fchj8l
+            - generic [ref=e1743]:
+              - generic [ref=e1744]:
+                - img "Pran Chinigura Aromatic Rice – 2kg" [ref=e1749]
+                - img "Free Delivery" [ref=e1751]
+              - generic [ref=e1753]:
+                - heading "tagtagPran Chinigura Aromatic Rice – 2kg" [level=4] [ref=e1754]:
+                  - img "tag" [ref=e1755]
+                  - img "tag" [ref=e1756]
+                  - text: Pran Chinigura Aromatic Rice – 2kg
+                - generic [ref=e1758]:
+                  - generic [ref=e1759]:
+                    - paragraph [ref=e1760]: ৳ 350
+                    - paragraph [ref=e1761]: "-5%"
+                  - paragraph [ref=e1762]: ৳ 370
+                - generic [ref=e1763]:
+                  - generic [ref=e1766]:
+                    - generic [ref=e1767]:
+                      - img [ref=e1768]
+                      - img [ref=e1770]
+                      - img [ref=e1772]
+                      - img [ref=e1774]
+                      - img [ref=e1776]
+                    - generic [ref=e1778]:
+                      - img [ref=e1779]
+                      - img [ref=e1781]
+                      - img [ref=e1783]
+                      - img [ref=e1785]
+                      - img [ref=e1787]
+                  - paragraph [ref=e1790]: "4.9"
+                  - paragraph [ref=e1791]: (40)
+          - link "Lifebuoy Hand Wash Care Refill – 170ml Free Delivery tagtagLifebuoy Hand Wash Care Refill – 170ml ৳ 79 -12% ৳ 90 4.9 (25)" [ref=e1793] [cursor=pointer]:
+            - /url: /product/lifebuoy_handwash_soap_care_refill_170ml_3545349017160513_aj2xns
+            - generic [ref=e1794]:
+              - generic [ref=e1795]:
+                - img "Lifebuoy Hand Wash Care Refill – 170ml" [ref=e1800]
+                - img "Free Delivery" [ref=e1802]
+              - generic [ref=e1804]:
+                - heading "tagtagLifebuoy Hand Wash Care Refill – 170ml" [level=4] [ref=e1805]:
+                  - img "tag" [ref=e1806]
+                  - img "tag" [ref=e1807]
+                  - text: Lifebuoy Hand Wash Care Refill – 170ml
+                - generic [ref=e1809]:
+                  - generic [ref=e1810]:
+                    - paragraph [ref=e1811]: ৳ 79
+                    - paragraph [ref=e1812]: "-12%"
+                  - paragraph [ref=e1813]: ৳ 90
+                - generic [ref=e1814]:
+                  - generic [ref=e1817]:
+                    - generic [ref=e1818]:
+                      - img [ref=e1819]
+                      - img [ref=e1821]
+                      - img [ref=e1823]
+                      - img [ref=e1825]
+                      - img [ref=e1827]
+                    - generic [ref=e1829]:
+                      - img [ref=e1830]
+                      - img [ref=e1832]
+                      - img [ref=e1834]
+                      - img [ref=e1836]
+                      - img [ref=e1838]
+                  - paragraph [ref=e1841]: "4.9"
+                  - paragraph [ref=e1842]: (25)
+          - link "Sensodyne Fresh Mint Toothpaste 40 g Free Delivery tagtagSensodyne Fresh Mint Toothpaste 40 g ৳ 108 -10% ৳ 120 5.0 (7)" [ref=e1844] [cursor=pointer]:
+            - /url: /product/sensodyne_fresh_mint_40g_1214271451772480_1n7qcx
+            - generic [ref=e1845]:
+              - generic [ref=e1846]:
+                - img "Sensodyne Fresh Mint Toothpaste 40 g" [ref=e1851]
+                - img "Free Delivery" [ref=e1853]
+              - generic [ref=e1855]:
+                - heading "tagtagSensodyne Fresh Mint Toothpaste 40 g" [level=4] [ref=e1856]:
+                  - img "tag" [ref=e1857]
+                  - img "tag" [ref=e1858]
+                  - text: Sensodyne Fresh Mint Toothpaste 40 g
+                - generic [ref=e1860]:
+                  - generic [ref=e1861]:
+                    - paragraph [ref=e1862]: ৳ 108
+                    - paragraph [ref=e1863]: "-10%"
+                  - paragraph [ref=e1864]: ৳ 120
+                - generic [ref=e1865]:
+                  - generic [ref=e1868]:
+                    - generic [ref=e1869]:
+                      - img [ref=e1870]
+                      - img [ref=e1872]
+                      - img [ref=e1874]
+                      - img [ref=e1876]
+                      - img [ref=e1878]
+                    - generic [ref=e1880]:
+                      - img [ref=e1881]
+                      - img [ref=e1883]
+                      - img [ref=e1885]
+                      - img [ref=e1887]
+                      - img [ref=e1889]
+                  - paragraph [ref=e1892]: "5.0"
+                  - paragraph [ref=e1893]: (7)
+          - link "Wild Stone Hydra Energy EDP 50ML for Men Free Delivery tagWild Stone Hydra Energy EDP 50ML for Men ৳ 570 -35% ৳ 876 4.7 (6)" [ref=e1895] [cursor=pointer]:
+            - /url: /product/wild_stone_hydra_energy_edp_50ml_for_men_1673496833422031_cj4eu1
+            - generic [ref=e1896]:
+              - generic [ref=e1897]:
+                - img "Wild Stone Hydra Energy EDP 50ML for Men" [ref=e1902]
+                - img "Free Delivery" [ref=e1904]
+              - generic [ref=e1906]:
+                - heading "tagWild Stone Hydra Energy EDP 50ML for Men" [level=4] [ref=e1907]:
+                  - img "tag"
+                  - text: Wild Stone Hydra Energy EDP 50ML for Men
+                - generic [ref=e1909]:
+                  - generic [ref=e1910]:
+                    - paragraph [ref=e1911]: ৳ 570
+                    - paragraph [ref=e1912]: "-35%"
+                  - paragraph [ref=e1913]: ৳ 876
+                - generic [ref=e1914]:
+                  - generic [ref=e1917]:
+                    - generic [ref=e1918]:
+                      - img [ref=e1919]
+                      - img [ref=e1921]
+                      - img [ref=e1923]
+                      - img [ref=e1925]
+                      - img [ref=e1927]
+                    - generic [ref=e1929]:
+                      - img [ref=e1930]
+                      - img [ref=e1932]
+                      - img [ref=e1934]
+                      - img [ref=e1936]
+                      - img [ref=e1938]
+                  - paragraph [ref=e1941]: "4.7"
+                  - paragraph [ref=e1942]: (6)
+          - link "Universal 5 In 1 AC 250V 6A Combine 4 Pcs Gang Switch + Fan Dimmer Regulator + 2 Pin Socket and LED Indicator + Fuse Combine Wall Gang Switch Box Free Delivery tagtagUniversal 5 In 1 AC 250V 6A Combine 4 Pcs Gang Switch + Fan Dimmer Regulator + 2 Pin Socket and LED Indicator + Fuse Combine Wall Gang Switch Box ৳ 167 -24% ৳ 219 5.0 (2)" [ref=e1944] [cursor=pointer]:
+            - /url: /product/universal_5_in_1_ac_250v_6a_combine_4_pcs_gang_switch_fan_dimmer_regulator_2_pin_socket_and_led_indicator_fuse_combine_wall_gang_switch_box_4256861690108711_dg3g8z
+            - generic [ref=e1945]:
+              - generic [ref=e1946]:
+                - img "Universal 5 In 1 AC 250V 6A Combine 4 Pcs Gang Switch + Fan Dimmer Regulator + 2 Pin Socket and LED Indicator + Fuse Combine Wall Gang Switch Box" [ref=e1951]
+                - img "Free Delivery" [ref=e1953]
+              - generic [ref=e1955]:
+                - heading "tagtagUniversal 5 In 1 AC 250V 6A Combine 4 Pcs Gang Switch + Fan Dimmer Regulator + 2 Pin Socket and LED Indicator + Fuse Combine Wall Gang Switch Box" [level=4] [ref=e1956]:
+                  - img "tag" [ref=e1957]
+                  - img "tag"
+                  - text: Universal 5 In 1 AC 250V 6A Combine 4 Pcs Gang Switch + Fan Dimmer Regulator + 2 Pin Socket and LED Indicator + Fuse Combine Wall Gang Switch Box
+                - generic [ref=e1959]:
+                  - generic [ref=e1960]:
+                    - paragraph [ref=e1961]: ৳ 167
+                    - paragraph [ref=e1962]: "-24%"
+                  - paragraph [ref=e1963]: ৳ 219
+                - generic [ref=e1964]:
+                  - generic [ref=e1967]:
+                    - generic [ref=e1968]:
+                      - img [ref=e1969]
+                      - img [ref=e1971]
+                      - img [ref=e1973]
+                      - img [ref=e1975]
+                      - img [ref=e1977]
+                    - generic [ref=e1979]:
+                      - img [ref=e1980]
+                      - img [ref=e1982]
+                      - img [ref=e1984]
+                      - img [ref=e1986]
+                      - img [ref=e1988]
+                  - paragraph [ref=e1991]: "5.0"
+                  - paragraph [ref=e1992]: (2)
+          - link "Hoco EQ34 Plus Rima ANC+ENC TWS Earbud Free Delivery Hoco EQ34 Plus Rima ANC+ENC TWS Earbud ৳ 790 -47% ৳ 1,500 5.0 (1)" [ref=e1994] [cursor=pointer]:
+            - /url: /product/hoco_eq34_plus_rima_ancenc_tws_earbud_1777372395536_8yw5t1
+            - generic [ref=e1995]:
+              - generic [ref=e1996]:
+                - img "Hoco EQ34 Plus Rima ANC+ENC TWS Earbud" [ref=e2001]
+                - img "Free Delivery" [ref=e2003]
+              - generic [ref=e2005]:
+                - heading "Hoco EQ34 Plus Rima ANC+ENC TWS Earbud" [level=4] [ref=e2006]
+                - generic [ref=e2008]:
+                  - generic [ref=e2009]:
+                    - paragraph [ref=e2010]: ৳ 790
+                    - paragraph [ref=e2011]: "-47%"
+                  - paragraph [ref=e2012]: ৳ 1,500
+                - generic [ref=e2013]:
+                  - generic [ref=e2016]:
+                    - generic [ref=e2017]:
+                      - img [ref=e2018]
+                      - img [ref=e2020]
+                      - img [ref=e2022]
+                      - img [ref=e2024]
+                      - img [ref=e2026]
+                    - generic [ref=e2028]:
+                      - img [ref=e2029]
+                      - img [ref=e2031]
+                      - img [ref=e2033]
+                      - img [ref=e2035]
+                      - img [ref=e2037]
+                  - paragraph [ref=e2040]: "5.0"
+                  - paragraph [ref=e2041]: (1)
+          - link "Lifebuoy Total Handwash 5 Litre Free Delivery tagtagLifebuoy Total Handwash 5 Litre ৳ 971 -31% ৳ 1,400 5.0 (222)" [ref=e2043] [cursor=pointer]:
+            - /url: /product/lifebuoy_handwash_soap_total_5l_3545349020684077_axgx0f
+            - generic [ref=e2044]:
+              - generic [ref=e2045]:
+                - img "Lifebuoy Total Handwash 5 Litre" [ref=e2050]
+                - img "Free Delivery" [ref=e2052]
+              - generic [ref=e2054]:
+                - heading "tagtagLifebuoy Total Handwash 5 Litre" [level=4] [ref=e2055]:
+                  - img "tag" [ref=e2056]
+                  - img "tag" [ref=e2057]
+                  - text: Lifebuoy Total Handwash 5 Litre
+                - generic [ref=e2059]:
+                  - generic [ref=e2060]:
+                    - paragraph [ref=e2061]: ৳ 971
+                    - paragraph [ref=e2062]: "-31%"
+                  - paragraph [ref=e2063]: ৳ 1,400
+                - generic [ref=e2064]:
+                  - generic [ref=e2067]:
+                    - generic [ref=e2068]:
+                      - img [ref=e2069]
+                      - img [ref=e2071]
+                      - img [ref=e2073]
+                      - img [ref=e2075]
+                      - img [ref=e2077]
+                    - generic [ref=e2079]:
+                      - img [ref=e2080]
+                      - img [ref=e2082]
+                      - img [ref=e2084]
+                      - img [ref=e2086]
+                      - img [ref=e2088]
+                  - paragraph [ref=e2091]: "5.0"
+                  - paragraph [ref=e2092]: (222)
+          - link "Lg Super 40kg/1g Digital Scale Free Delivery Lg Super 40kg/1g Digital Scale ৳ 2,400 -2% ৳ 2,450 5.0 (2)" [ref=e2094] [cursor=pointer]:
+            - /url: /product/lg_super_10kg1g_digital_scale_603300504832790_s4rzve
+            - generic [ref=e2095]:
+              - generic [ref=e2096]:
+                - img "Lg Super 40kg/1g Digital Scale" [ref=e2101]
+                - img "Free Delivery" [ref=e2103]
+              - generic [ref=e2105]:
+                - heading "Lg Super 40kg/1g Digital Scale" [level=4] [ref=e2106]
+                - generic [ref=e2108]:
+                  - generic [ref=e2109]:
+                    - paragraph [ref=e2110]: ৳ 2,400
+                    - paragraph [ref=e2111]: "-2%"
+                  - paragraph [ref=e2112]: ৳ 2,450
+                - generic [ref=e2113]:
+                  - generic [ref=e2116]:
+                    - generic [ref=e2117]:
+                      - img [ref=e2118]
+                      - img [ref=e2120]
+                      - img [ref=e2122]
+                      - img [ref=e2124]
+                      - img [ref=e2126]
+                    - generic [ref=e2128]:
+                      - img [ref=e2129]
+                      - img [ref=e2131]
+                      - img [ref=e2133]
+                      - img [ref=e2135]
+                      - img [ref=e2137]
+                  - paragraph [ref=e2140]: "5.0"
+                  - paragraph [ref=e2141]: (2)
+          - link "Savlon Soap Mild 75g Free Delivery tagtagSavlon Soap Mild 75g ৳ 51 -7% ৳ 55 4.7 (3)" [ref=e2143] [cursor=pointer]:
+            - /url: /product/savlon_soap_mild_75g_1139481903486255_4haoae
+            - generic [ref=e2144]:
+              - generic [ref=e2145]:
+                - img "Savlon Soap Mild 75g" [ref=e2150]
+                - img "Free Delivery" [ref=e2152]
+              - generic [ref=e2154]:
+                - heading "tagtagSavlon Soap Mild 75g" [level=4] [ref=e2155]:
+                  - img "tag" [ref=e2156]
+                  - img "tag" [ref=e2157]
+                  - text: Savlon Soap Mild 75g
+                - generic [ref=e2159]:
+                  - generic [ref=e2160]:
+                    - paragraph [ref=e2161]: ৳ 51
+                    - paragraph [ref=e2162]: "-7%"
+                  - paragraph [ref=e2163]: ৳ 55
+                - generic [ref=e2164]:
+                  - generic [ref=e2167]:
+                    - generic [ref=e2168]:
+                      - img [ref=e2169]
+                      - img [ref=e2171]
+                      - img [ref=e2173]
+                      - img [ref=e2175]
+                      - img [ref=e2177]
+                    - generic [ref=e2179]:
+                      - img [ref=e2180]
+                      - img [ref=e2182]
+                      - img [ref=e2184]
+                      - img [ref=e2186]
+                      - img [ref=e2188]
+                  - paragraph [ref=e2191]: "4.7"
+                  - paragraph [ref=e2192]: (3)
+          - link "Domex Toilet Cleaning Liquid Lime Fresh 750ml (Bundle of 2) Free Delivery tagtagDomex Toilet Cleaning Liquid Lime Fresh 750ml (Bundle of 2) ৳ 181 -50% ৳ 360 5.0 (6)" [ref=e2194] [cursor=pointer]:
+            - /url: /product/domex_toilet_cleaning_liquid_lime_fresh_750ml_get_a_container_free_bundle_of_2_457722918573942_pabgfm
+            - generic [ref=e2195]:
+              - generic [ref=e2196]:
+                - img "Domex Toilet Cleaning Liquid Lime Fresh 750ml (Bundle of 2)" [ref=e2201]
+                - img "Free Delivery" [ref=e2203]
+              - generic [ref=e2205]:
+                - heading "tagtagDomex Toilet Cleaning Liquid Lime Fresh 750ml (Bundle of 2)" [level=4] [ref=e2206]:
+                  - img "tag" [ref=e2207]
+                  - img "tag" [ref=e2208]
+                  - text: Domex Toilet Cleaning Liquid Lime Fresh 750ml (Bundle of 2)
+                - generic [ref=e2210]:
+                  - generic [ref=e2211]:
+                    - paragraph [ref=e2212]: ৳ 181
+                    - paragraph [ref=e2213]: "-50%"
+                  - paragraph [ref=e2214]: ৳ 360
+                - generic [ref=e2215]:
+                  - generic [ref=e2218]:
+                    - generic [ref=e2219]:
+                      - img [ref=e2220]
+                      - img [ref=e2222]
+                      - img [ref=e2224]
+                      - img [ref=e2226]
+                      - img [ref=e2228]
+                    - generic [ref=e2230]:
+                      - img [ref=e2231]
+                      - img [ref=e2233]
+                      - img [ref=e2235]
+                      - img [ref=e2237]
+                      - img [ref=e2239]
+                  - paragraph [ref=e2242]: "5.0"
+                  - paragraph [ref=e2243]: (6)
+          - link "Superlative Trendsetter -Upscale Living -আউটডোর ছোট ব্যাকপ্যাক ডেপ্যাক বুকব্যাগ ল্যাপটপ ব্যাগ 10l - school bag- Inventive Choice Free Delivery Superlative Trendsetter -Upscale Living -আউটডোর ছোট ব্যাকপ্যাক ডেপ্যাক বুকব্যাগ ল্যাপটপ ব্যাগ 10l - school bag- Inventive Choice ৳ 124 -38% ৳ 199 5.0 (6)" [ref=e2245] [cursor=pointer]:
+            - /url: /product/superlative_trendsetter_-upscale_living_-_10l_-_school_bag-_inventive_choice_4854550284400832_5t3ngo
+            - generic [ref=e2246]:
+              - generic [ref=e2247]:
+                - img "Superlative Trendsetter -Upscale Living -আউটডোর ছোট ব্যাকপ্যাক ডেপ্যাক বুকব্যাগ ল্যাপটপ ব্যাগ 10l - school bag- Inventive Choice" [ref=e2252]
+                - img "Free Delivery" [ref=e2254]
+              - generic [ref=e2256]:
+                - heading "Superlative Trendsetter -Upscale Living -আউটডোর ছোট ব্যাকপ্যাক ডেপ্যাক বুকব্যাগ ল্যাপটপ ব্যাগ 10l - school bag- Inventive Choice" [level=4] [ref=e2257]
+                - generic [ref=e2259]:
+                  - generic [ref=e2260]:
+                    - paragraph [ref=e2261]: ৳ 124
+                    - paragraph [ref=e2262]: "-38%"
+                  - paragraph [ref=e2263]: ৳ 199
+                - generic [ref=e2264]:
+                  - generic [ref=e2267]:
+                    - generic [ref=e2268]:
+                      - img [ref=e2269]
+                      - img [ref=e2271]
+                      - img [ref=e2273]
+                      - img [ref=e2275]
+                      - img [ref=e2277]
+                    - generic [ref=e2279]:
+                      - img [ref=e2280]
+                      - img [ref=e2282]
+                      - img [ref=e2284]
+                      - img [ref=e2286]
+                      - img [ref=e2288]
+                  - paragraph [ref=e2291]: "5.0"
+                  - paragraph [ref=e2292]: (6)
+          - link "7ft Mobile Tripod Stand - Free Mobile Holder Included - Ideal for Photography and Live Streaming With Holder Free Delivery 7ft Mobile Tripod Stand - Free Mobile Holder Included - Ideal for Photography and Live Streaming With Holder ৳ 345 -62% ৳ 900 5.0 (7)" [ref=e2294] [cursor=pointer]:
+            - /url: /product/7ft_mobile_tripod_stand_-_free_mobile_holder_included_-_ideal_for_photography_and_live_streaming_with_holder_3298077317290626_iu7htd
+            - generic [ref=e2295]:
+              - generic [ref=e2296]:
+                - img "7ft Mobile Tripod Stand - Free Mobile Holder Included - Ideal for Photography and Live Streaming With Holder" [ref=e2301]
+                - img "Free Delivery" [ref=e2303]
+              - generic [ref=e2305]:
+                - heading "7ft Mobile Tripod Stand - Free Mobile Holder Included - Ideal for Photography and Live Streaming With Holder" [level=4] [ref=e2306]
+                - generic [ref=e2308]:
+                  - generic [ref=e2309]:
+                    - paragraph [ref=e2310]: ৳ 345
+                    - paragraph [ref=e2311]: "-62%"
+                  - paragraph [ref=e2312]: ৳ 900
+                - generic [ref=e2313]:
+                  - generic [ref=e2316]:
+                    - generic [ref=e2317]:
+                      - img [ref=e2318]
+                      - img [ref=e2320]
+                      - img [ref=e2322]
+                      - img [ref=e2324]
+                      - img [ref=e2326]
+                    - generic [ref=e2328]:
+                      - img [ref=e2329]
+                      - img [ref=e2331]
+                      - img [ref=e2333]
+                      - img [ref=e2335]
+                      - img [ref=e2337]
+                  - paragraph [ref=e2340]: "5.0"
+                  - paragraph [ref=e2341]: (7)
+          - link "Go Fresh Lavender Air Freshener 300 ml Free Delivery tagtagGo Fresh Lavender Air Freshener 300 ml ৳ 144 -40% ৳ 240 3.6 (9)" [ref=e2343] [cursor=pointer]:
+            - /url: /product/go_fresh_lavender_air_freshener_300_ml_3901932941968896_qlzae9
+            - generic [ref=e2344]:
+              - generic [ref=e2345]:
+                - img "Go Fresh Lavender Air Freshener 300 ml" [ref=e2350]
+                - img "Free Delivery" [ref=e2352]
+              - generic [ref=e2354]:
+                - heading "tagtagGo Fresh Lavender Air Freshener 300 ml" [level=4] [ref=e2355]:
+                  - img "tag" [ref=e2356]
+                  - img "tag" [ref=e2357]
+                  - text: Go Fresh Lavender Air Freshener 300 ml
+                - generic [ref=e2359]:
+                  - generic [ref=e2360]:
+                    - paragraph [ref=e2361]: ৳ 144
+                    - paragraph [ref=e2362]: "-40%"
+                  - paragraph [ref=e2363]: ৳ 240
+                - generic [ref=e2364]:
+                  - generic [ref=e2367]:
+                    - generic [ref=e2368]:
+                      - img [ref=e2369]
+                      - img [ref=e2371]
+                      - img [ref=e2373]
+                      - img [ref=e2375]
+                      - img [ref=e2377]
+                    - generic [ref=e2379]:
+                      - img [ref=e2380]
+                      - img [ref=e2382]
+                      - img [ref=e2384]
+                      - img [ref=e2386]
+                      - img [ref=e2388]
+                  - paragraph [ref=e2391]: "3.6"
+                  - paragraph [ref=e2392]: (9)
+          - link "5 in 1 Mobile Gaming Combo Pack Free Delivery 5 in 1 Mobile Gaming Combo Pack ৳ 1,620 -54% ৳ 3,500 5.0 (5)" [ref=e2394] [cursor=pointer]:
+            - /url: /product/5_in_1_mobile_gaming_combo_pack
+            - generic [ref=e2395]:
+              - generic [ref=e2396]:
+                - img "5 in 1 Mobile Gaming Combo Pack" [ref=e2401]
+                - img "Free Delivery" [ref=e2403]
+              - generic [ref=e2405]:
+                - heading "5 in 1 Mobile Gaming Combo Pack" [level=4] [ref=e2406]
+                - generic [ref=e2408]:
+                  - generic [ref=e2409]:
+                    - paragraph [ref=e2410]: ৳ 1,620
+                    - paragraph [ref=e2411]: "-54%"
+                  - paragraph [ref=e2412]: ৳ 3,500
+                - generic [ref=e2413]:
+                  - generic [ref=e2416]:
+                    - generic [ref=e2417]:
+                      - img [ref=e2418]
+                      - img [ref=e2420]
+                      - img [ref=e2422]
+                      - img [ref=e2424]
+                      - img [ref=e2426]
+                    - generic [ref=e2428]:
+                      - img [ref=e2429]
+                      - img [ref=e2431]
+                      - img [ref=e2433]
+                      - img [ref=e2435]
+                      - img [ref=e2437]
+                  - paragraph [ref=e2440]: "5.0"
+                  - paragraph [ref=e2441]: (5)
+          - link "12 Pairs Nylon Rubber Coated Safety Hand Gloves - Blue, Cut-Resistant & Chemical-Resistant for Industrial, Household, & Bike Riding (24 Pieces) STI Free Delivery 12 Pairs Nylon Rubber Coated Safety Hand Gloves - Blue, Cut-Resistant & Chemical-Resistant for Industrial, Household, & Bike Riding (24 Pieces) STI ৳ 499 -31% ৳ 720 5.0 (1)" [ref=e2443] [cursor=pointer]:
+            - /url: /product/12_pairs_nylon_rubber_coated_safety_hand_gloves_-_blue_cut-resistant_chemical-resistant_for_industrial_household_bike_riding_24_pieces_sti_3629406487722625_gwhrel
+            - generic [ref=e2444]:
+              - generic [ref=e2445]:
+                - img "12 Pairs Nylon Rubber Coated Safety Hand Gloves - Blue, Cut-Resistant & Chemical-Resistant for Industrial, Household, & Bike Riding (24 Pieces) STI" [ref=e2450]
+                - img "Free Delivery" [ref=e2452]
+              - generic [ref=e2454]:
+                - heading "12 Pairs Nylon Rubber Coated Safety Hand Gloves - Blue, Cut-Resistant & Chemical-Resistant for Industrial, Household, & Bike Riding (24 Pieces) STI" [level=4] [ref=e2455]
+                - generic [ref=e2457]:
+                  - generic [ref=e2458]:
+                    - paragraph [ref=e2459]: ৳ 499
+                    - paragraph [ref=e2460]: "-31%"
+                  - paragraph [ref=e2461]: ৳ 720
+                - generic [ref=e2462]:
+                  - generic [ref=e2465]:
+                    - generic [ref=e2466]:
+                      - img [ref=e2467]
+                      - img [ref=e2469]
+                      - img [ref=e2471]
+                      - img [ref=e2473]
+                      - img [ref=e2475]
+                    - generic [ref=e2477]:
+                      - img [ref=e2478]
+                      - img [ref=e2480]
+                      - img [ref=e2482]
+                      - img [ref=e2484]
+                      - img [ref=e2486]
+                  - paragraph [ref=e2489]: "5.0"
+                  - paragraph [ref=e2490]: (1)
+          - link "RFL SS Single Wall Water Bottle 650ML 623363 1 pcs any color Free Delivery tagRFL SS Single Wall Water Bottle 650ML 623363 1 pcs any color ৳ 298 -15% ৳ 350 4.8 (15)" [ref=e2492] [cursor=pointer]:
+            - /url: /product/rfl-ss-single-wall-water-bottle-650ml-623363-1-pcs-any-color-1772699757455-8l5l
+            - generic [ref=e2493]:
+              - generic [ref=e2494]:
+                - img "RFL SS Single Wall Water Bottle 650ML 623363 1 pcs any color" [ref=e2499]
+                - img "Free Delivery" [ref=e2501]
+              - generic [ref=e2503]:
+                - heading "tagRFL SS Single Wall Water Bottle 650ML 623363 1 pcs any color" [level=4] [ref=e2504]:
+                  - img "tag" [ref=e2505]
+                  - text: RFL SS Single Wall Water Bottle 650ML 623363 1 pcs any color
+                - generic [ref=e2507]:
+                  - generic [ref=e2508]:
+                    - paragraph [ref=e2509]: ৳ 298
+                    - paragraph [ref=e2510]: "-15%"
+                  - paragraph [ref=e2511]: ৳ 350
+                - generic [ref=e2512]:
+                  - generic [ref=e2515]:
+                    - generic [ref=e2516]:
+                      - img [ref=e2517]
+                      - img [ref=e2519]
+                      - img [ref=e2521]
+                      - img [ref=e2523]
+                      - img [ref=e2525]
+                    - generic [ref=e2527]:
+                      - img [ref=e2528]
+                      - img [ref=e2530]
+                      - img [ref=e2532]
+                      - img [ref=e2534]
+                      - img [ref=e2536]
+                  - paragraph [ref=e2539]: "4.8"
+                  - paragraph [ref=e2540]: (15)
+          - link "Cartup Gift Card Tk. 500 Free Delivery tagCartup Gift Card Tk. 500 ৳ 450 -10% ৳ 500 4.6 (51)" [ref=e2542] [cursor=pointer]:
+            - /url: /product/cartup_gift_card_tk_500_2973631156315667_kuu183
+            - generic [ref=e2543]:
+              - generic [ref=e2544]:
+                - img "Cartup Gift Card Tk. 500" [ref=e2549]
+                - img "Free Delivery" [ref=e2551]
+              - generic [ref=e2553]:
+                - heading "tagCartup Gift Card Tk. 500" [level=4] [ref=e2554]:
+                  - img "tag" [ref=e2555]
+                  - text: Cartup Gift Card Tk. 500
+                - generic [ref=e2557]:
+                  - generic [ref=e2558]:
+                    - paragraph [ref=e2559]: ৳ 450
+                    - paragraph [ref=e2560]: "-10%"
+                  - paragraph [ref=e2561]: ৳ 500
+                - generic [ref=e2562]:
+                  - generic [ref=e2565]:
+                    - generic [ref=e2566]:
+                      - img [ref=e2567]
+                      - img [ref=e2569]
+                      - img [ref=e2571]
+                      - img [ref=e2573]
+                      - img [ref=e2575]
+                    - generic [ref=e2577]:
+                      - img [ref=e2578]
+                      - img [ref=e2580]
+                      - img [ref=e2582]
+                      - img [ref=e2584]
+                      - img [ref=e2586]
+                  - paragraph [ref=e2589]: "4.6"
+                  - paragraph [ref=e2590]: (51)
+          - link "Lipton Green Tea Honey Lemon 25 Bags Free Delivery tagtagLipton Green Tea Honey Lemon 25 Bags ৳ 147 -14% ৳ 170 5.0 (1)" [ref=e2592] [cursor=pointer]:
+            - /url: /product/lipton_green_tb_hl_l_14g
+            - generic [ref=e2593]:
+              - generic [ref=e2594]:
+                - img "Lipton Green Tea Honey Lemon 25 Bags" [ref=e2599]
+                - img "Free Delivery" [ref=e2601]
+              - generic [ref=e2603]:
+                - heading "tagtagLipton Green Tea Honey Lemon 25 Bags" [level=4] [ref=e2604]:
+                  - img "tag" [ref=e2605]
+                  - img "tag" [ref=e2606]
+                  - text: Lipton Green Tea Honey Lemon 25 Bags
+                - generic [ref=e2608]:
+                  - generic [ref=e2609]:
+                    - paragraph [ref=e2610]: ৳ 147
+                    - paragraph [ref=e2611]: "-14%"
+                  - paragraph [ref=e2612]: ৳ 170
+                - generic [ref=e2613]:
+                  - generic [ref=e2616]:
+                    - generic [ref=e2617]:
+                      - img [ref=e2618]
+                      - img [ref=e2620]
+                      - img [ref=e2622]
+                      - img [ref=e2624]
+                      - img [ref=e2626]
+                    - generic [ref=e2628]:
+                      - img [ref=e2629]
+                      - img [ref=e2631]
+                      - img [ref=e2633]
+                      - img [ref=e2635]
+                      - img [ref=e2637]
+                  - paragraph [ref=e2640]: "5.0"
+                  - paragraph [ref=e2641]: (1)
+          - link "Home Tex Synthetic Curtain – 4 Kuchi Free Delivery tagHome Tex Synthetic Curtain – 4 Kuchi ৳ 179 -49% ৳ 349 4.6 (23)" [ref=e2643] [cursor=pointer]:
+            - /url: /product/premium_quality_home_tex_synthetic_curtain_4_khuci_porda_parda_for_home_decoration_door_and_window_from_suba_international_1139392648915238_afw4u8
+            - generic [ref=e2644]:
+              - generic [ref=e2645]:
+                - img "Home Tex Synthetic Curtain – 4 Kuchi" [ref=e2650]
+                - img "Free Delivery" [ref=e2652]
+              - generic [ref=e2654]:
+                - heading "tagHome Tex Synthetic Curtain – 4 Kuchi" [level=4] [ref=e2655]:
+                  - img "tag"
+                  - text: Home Tex Synthetic Curtain – 4 Kuchi
+                - generic [ref=e2657]:
+                  - generic [ref=e2658]:
+                    - paragraph [ref=e2659]: ৳ 179
+                    - paragraph [ref=e2660]: "-49%"
+                  - paragraph [ref=e2661]: ৳ 349
+                - generic [ref=e2662]:
+                  - generic [ref=e2665]:
+                    - generic [ref=e2666]:
+                      - img [ref=e2667]
+                      - img [ref=e2669]
+                      - img [ref=e2671]
+                      - img [ref=e2673]
+                      - img [ref=e2675]
+                    - generic [ref=e2677]:
+                      - img [ref=e2678]
+                      - img [ref=e2680]
+                      - img [ref=e2682]
+                      - img [ref=e2684]
+                      - img [ref=e2686]
+                  - paragraph [ref=e2689]: "4.6"
+                  - paragraph [ref=e2690]: (23)
+          - link "Lux International Gluta Bar Bouncy & Bright 125g Free Delivery tagtagLux International Gluta Bar Bouncy & Bright 125g ৳ 93 -7% ৳ 100 5.0 (3)" [ref=e2692] [cursor=pointer]:
+            - /url: /product/lux_international_gluta_bar_bouncy_bright_125g_1343866517341729_us8bly
+            - generic [ref=e2693]:
+              - generic [ref=e2694]:
+                - img "Lux International Gluta Bar Bouncy & Bright 125g" [ref=e2699]
+                - img "Free Delivery" [ref=e2701]
+              - generic [ref=e2703]:
+                - heading "tagtagLux International Gluta Bar Bouncy & Bright 125g" [level=4] [ref=e2704]:
+                  - img "tag" [ref=e2705]
+                  - img "tag" [ref=e2706]
+                  - text: Lux International Gluta Bar Bouncy & Bright 125g
+                - generic [ref=e2708]:
+                  - generic [ref=e2709]:
+                    - paragraph [ref=e2710]: ৳ 93
+                    - paragraph [ref=e2711]: "-7%"
+                  - paragraph [ref=e2712]: ৳ 100
+                - generic [ref=e2713]:
+                  - generic [ref=e2716]:
+                    - generic [ref=e2717]:
+                      - img [ref=e2718]
+                      - img [ref=e2720]
+                      - img [ref=e2722]
+                      - img [ref=e2724]
+                      - img [ref=e2726]
+                    - generic [ref=e2728]:
+                      - img [ref=e2729]
+                      - img [ref=e2731]
+                      - img [ref=e2733]
+                      - img [ref=e2735]
+                      - img [ref=e2737]
+                  - paragraph [ref=e2740]: "5.0"
+                  - paragraph [ref=e2741]: (3)
+          - link "Mixed Dry Fruits & Nuts – 500g Free Delivery Mixed Dry Fruits & Nuts – 500g ৳ 369 -63% ৳ 990 3.9 (18)" [ref=e2743] [cursor=pointer]:
+            - /url: /product/mix_dry_fruits_-_500gm_mix_nuts_793510262523836_na5ybe
+            - generic [ref=e2744]:
+              - generic [ref=e2745]:
+                - img "Mixed Dry Fruits & Nuts – 500g" [ref=e2750]
+                - img "Free Delivery" [ref=e2752]
+              - generic [ref=e2754]:
+                - heading "Mixed Dry Fruits & Nuts – 500g" [level=4] [ref=e2755]
+                - generic [ref=e2757]:
+                  - generic [ref=e2758]:
+                    - paragraph [ref=e2759]: ৳ 369
+                    - paragraph [ref=e2760]: "-63%"
+                  - paragraph [ref=e2761]: ৳ 990
+                - generic [ref=e2762]:
+                  - generic [ref=e2765]:
+                    - generic [ref=e2766]:
+                      - img [ref=e2767]
+                      - img [ref=e2769]
+                      - img [ref=e2771]
+                      - img [ref=e2773]
+                      - img [ref=e2775]
+                    - generic [ref=e2777]:
+                      - img [ref=e2778]
+                      - img [ref=e2780]
+                      - img [ref=e2782]
+                      - img [ref=e2784]
+                      - img [ref=e2786]
+                  - paragraph [ref=e2789]: "3.9"
+                  - paragraph [ref=e2790]: (18)
+        - button "Load More" [ref=e2792] [cursor=pointer]:
+          - paragraph [ref=e2793]: Load More
+    - generic [ref=e2795]:
+      - generic [ref=e2796]:
+        - generic [ref=e2797]:
+          - generic [ref=e2798]:
+            - paragraph [ref=e2800]: Rahman Regnum Centre, Level-6, 191/1, Tejgaon C/A, Dhaka-1208, Bangladesh
+            - link "+8809613444455" [ref=e2802] [cursor=pointer]:
+              - /url: "tel:+8809613444455 "
+            - paragraph [ref=e2804]: 9 am - 9 pm (Everyday)
+            - link "customer.care@cartup.com" [ref=e2806] [cursor=pointer]:
+              - /url: mailto:customer.care@cartup.com
+          - generic [ref=e2807]: Follow us on
+          - generic [ref=e2808]:
+            - link [ref=e2809] [cursor=pointer]:
+              - /url: https://www.facebook.com/CartupBangladesh/
+              - img [ref=e2810]
+            - link [ref=e2812] [cursor=pointer]:
+              - /url: "https://www.tiktok.com/@cartup_bangladesh "
+              - img [ref=e2813]
+            - link [ref=e2815] [cursor=pointer]:
+              - /url: https://www.youtube.com/@cartup_bangladesh
+              - img [ref=e2816]
+            - link [ref=e2818] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/cartup-bangladesh/?viewAsMember=true
+              - img [ref=e2819]
+            - link [ref=e2821] [cursor=pointer]:
+              - /url: "https://www.instagram.com/cartup_bangladesh/ "
+              - img [ref=e2822]
+        - generic [ref=e2824]:
+          - paragraph [ref=e2825]: Cartup
+          - generic [ref=e2828]:
+            - link "About Us" [ref=e2830] [cursor=pointer]:
+              - /url: /content/about-us
+            - link "Cartup Blog" [ref=e2832] [cursor=pointer]:
+              - /url: https://blog.cartup.com/
+            - link "Join the Cartup Affiliate Program" [ref=e2834] [cursor=pointer]:
+              - /url: https://cartup.affise.com/v2/sign/in
+            - link "Cookies Policy" [ref=e2836] [cursor=pointer]:
+              - /url: /content/cookies-policy
+            - link "Sell with Cartup" [ref=e2838] [cursor=pointer]:
+              - /url: https://seller.cartup.com/
+        - generic [ref=e2839]:
+          - paragraph [ref=e2840]: Customer Care
+          - generic [ref=e2843]:
+            - link "Return & Refund Policy" [ref=e2845] [cursor=pointer]:
+              - /url: /content/returns-and-refunds
+            - link "Privacy Policy" [ref=e2847] [cursor=pointer]:
+              - /url: /content/privacy-policy
+            - link "Warranty Policy" [ref=e2849] [cursor=pointer]:
+              - /url: /content/warranty-policy
+            - link "Help Center" [ref=e2851] [cursor=pointer]:
+              - /url: /help-center
+            - link "Terms & Conditions" [ref=e2853] [cursor=pointer]:
+              - /url: /content/terms-and-conditions
+            - link "EMI Policy" [ref=e2855] [cursor=pointer]:
+              - /url: /content/emi-policy
+        - generic [ref=e2856]:
+          - paragraph [ref=e2857]: Payment Methods
+          - generic [ref=e2859]:
+            - generic [ref=e2860]:
+              - img "AMEX logo" [ref=e2862]
+              - separator [ref=e2863]
+            - generic [ref=e2864]:
+              - img "Credit/Debit Card logo" [ref=e2866]
+              - separator [ref=e2867]
+            - generic [ref=e2868]:
+              - img "Nagad logo" [ref=e2870]
+              - separator [ref=e2871]
+            - generic [ref=e2872]:
+              - img "bKash logo" [ref=e2874]
+              - separator [ref=e2875]
+            - generic [ref=e2876]:
+              - img "UPAY logo" [ref=e2878]
+              - separator [ref=e2879]
+            - generic [ref=e2880]:
+              - img "COD logo" [ref=e2882]
+              - separator [ref=e2883]
+            - generic [ref=e2884]:
+              - img "SSL logo" [ref=e2886]
+              - separator [ref=e2887]
+      - separator [ref=e2888]
+      - generic [ref=e2891]: © Copyright 2026 Cartup All Rights are Reserved.
+    - generic [ref=e2893]:
+      - link "profile Home" [ref=e2894] [cursor=pointer]:
+        - /url: /
+        - img "profile" [ref=e2895]
+        - paragraph [ref=e2896]: Home
+      - button "profile Categories" [ref=e2897] [cursor=pointer]:
+        - img "profile" [ref=e2898]
+        - paragraph [ref=e2899]: Categories
+      - link "cart Cart" [ref=e2900] [cursor=pointer]:
+        - /url: /cart
+        - img "cart" [ref=e2902]
+        - paragraph [ref=e2903]: Cart
+      - button "profile Account" [ref=e2904] [cursor=pointer]:
+        - img "profile" [ref=e2905]
+        - paragraph [ref=e2906]: Account
+  - region "Notifications alt+T"
+  - alert [ref=e2907]
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect, type Page } from '@playwright/test';
+  2  | 
+  3  | test('Mouse Hover', async ({ page }: { page: Page }) => {
+  4  |     await page.goto('https://cartup.com/')
+  5  |     // await page.locator("//svg[contains(@viewBox,'0 0 24 24')]/ancestor::button").hover()
+  6  |     await page.getByRole('button', { name: 'Categories' }).hover();
+  7  |     
+> 8  |     await page.getByRole('paragraph').filter({ hasText: 'Groceries & Essentials' }).hover();
+     |                                                                                     ^ Error: locator.hover: Test timeout of 120000ms exceeded.
+  9  | 
+  10 |     // await page.waitForTimeout(5000)
+  11 | })
+```

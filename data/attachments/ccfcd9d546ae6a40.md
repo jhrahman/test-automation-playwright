@@ -1,0 +1,1351 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: hiddendd.spec.ts >> Hidden DropDown Test
+- Location: tests/hiddendd.spec.ts:3:5
+
+# Error details
+
+```
+Test timeout of 120000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 120000ms exceeded.
+Call log:
+  - waiting for locator('//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[6]/div[1]/div[2]/div[1]/div[1]/div[2]/i[1]')
+    - locator resolved to <i data-v-bddebfba="" data-v-67d2aedf="" class="oxd-icon bi-caret-down-fill oxd-select-text--arrow"></i>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    234 × waiting for element to be visible, enabled and stable
+        - element is not visible
+      - retrying click action
+        - waiting 500ms
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic:
+    - complementary:
+      - navigation "Sidepanel":
+        - generic:
+          - link "client brand banner" [ref=e4] [cursor=pointer]:
+            - /url: https://www.orangehrm.com/
+            - img "client brand banner" [ref=e6]
+          - generic [ref=e7] [cursor=pointer]: 
+        - generic:
+          - generic [ref=e8]:
+            - generic [ref=e9]:
+              - textbox "Search" [ref=e12]
+              - text: 
+            - separator
+          - list [ref=e13]:
+            - listitem:
+              - link "Admin" [ref=e14] [cursor=pointer]:
+                - /url: /web/index.php/admin/viewAdminModule
+                - generic [ref=e17]: Admin
+            - listitem:
+              - link "PIM" [ref=e18] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewPimModule
+                - generic [ref=e32]: PIM
+            - listitem:
+              - link "Leave" [ref=e33] [cursor=pointer]:
+                - /url: /web/index.php/leave/viewLeaveModule
+                - generic [ref=e36]: Leave
+            - listitem:
+              - link "Time" [ref=e37] [cursor=pointer]:
+                - /url: /web/index.php/time/viewTimeModule
+                - generic [ref=e43]: Time
+            - listitem:
+              - link "Recruitment" [ref=e44] [cursor=pointer]:
+                - /url: /web/index.php/recruitment/viewRecruitmentModule
+                - generic [ref=e50]: Recruitment
+            - listitem:
+              - link "My Info" [ref=e51] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewMyDetails
+                - generic [ref=e57]: My Info
+            - listitem:
+              - link "Performance" [ref=e58] [cursor=pointer]:
+                - /url: /web/index.php/performance/viewPerformanceModule
+                - generic [ref=e66]: Performance
+            - listitem:
+              - link "Dashboard" [ref=e67] [cursor=pointer]:
+                - /url: /web/index.php/dashboard/index
+                - generic [ref=e70]: Dashboard
+            - listitem:
+              - link "Directory" [ref=e71] [cursor=pointer]:
+                - /url: /web/index.php/directory/viewDirectory
+                - generic [ref=e74]: Directory
+            - listitem:
+              - link "Maintenance" [ref=e75] [cursor=pointer]:
+                - /url: /web/index.php/maintenance/viewMaintenanceModule
+                - generic [ref=e79]: Maintenance
+            - listitem:
+              - link "Claim" [ref=e80] [cursor=pointer]:
+                - /url: /web/index.php/claim/viewClaimModule
+                - img [ref=e83]
+                - generic [ref=e87]: Claim
+            - listitem:
+              - link "Buzz" [ref=e88] [cursor=pointer]:
+                - /url: /web/index.php/buzz/viewBuzz
+                - generic [ref=e91]: Buzz
+    - banner [ref=e92]:
+      - generic [ref=e93]:
+        - generic [ref=e94]:
+          - generic [ref=e95] [cursor=pointer]: 
+          - heading "PIM" [level=6] [ref=e97]
+        - link "Upgrade" [ref=e99]:
+          - /url: https://orangehrm.com/open-source/upgrade-to-advanced
+          - button "Upgrade" [ref=e100] [cursor=pointer]: Upgrade
+        - list [ref=e106]:
+          - listitem [ref=e107]:
+            - generic [ref=e108] [cursor=pointer]:
+              - img "profile picture" [ref=e109]
+              - generic [ref=e110]: 
+      - navigation "Topbar Menu" [ref=e112]:
+        - list [ref=e113]:
+          - listitem [ref=e114] [cursor=pointer]:
+            - generic [ref=e115]:
+              - text: Configuration
+              - generic [ref=e116]: 
+          - listitem [ref=e117] [cursor=pointer]:
+            - generic [ref=e118]:
+              - text: More
+              - generic [ref=e119]: 
+          - button "" [ref=e121] [cursor=pointer]:
+            - generic [ref=e122]: 
+  - generic [ref=e123]:
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - heading "Employee Information" [level=5] [ref=e129]
+          - button "" [ref=e132] [cursor=pointer]:
+            - generic [ref=e133]: 
+        - text:    
+      - generic [ref=e134]:
+        - button " Add" [ref=e136] [cursor=pointer]:
+          - generic [ref=e137]: 
+          - text: Add
+        - generic [ref=e138]:
+          - separator [ref=e139]
+          - generic [ref=e141]: (198) Records Found
+        - table [ref=e143]:
+          - rowgroup [ref=e144]:
+            - row "Id 0564   First (& Middle) Name @@@@ Last Name Reddy" [ref=e146] [cursor=pointer]:
+              - generic [ref=e147]:
+                - generic [ref=e148]:
+                  - cell "Id 0564" [ref=e150]:
+                    - generic [ref=e151]:
+                      - generic [ref=e152]: Id
+                      - generic [ref=e153]: "0564"
+                  - cell " " [ref=e155]:
+                    - generic [ref=e156]:
+                      - button "" [ref=e157]:
+                        - generic [ref=e158]: 
+                      - button "" [ref=e159]:
+                        - generic [ref=e160]: 
+                - generic [ref=e161]:
+                  - cell "First (& Middle) Name @@@@" [ref=e162]:
+                    - generic [ref=e163]:
+                      - generic [ref=e164]: First (& Middle) Name
+                      - generic [ref=e165]: "@@@@"
+                  - cell "Last Name Reddy" [ref=e166]:
+                    - generic [ref=e167]:
+                      - generic [ref=e168]: Last Name
+                      - generic [ref=e169]: Reddy
+            - row "Id 01715   First (& Middle) Name Amelia Last Name Brown" [ref=e171] [cursor=pointer]:
+              - generic [ref=e172]:
+                - generic [ref=e173]:
+                  - cell "Id 01715" [ref=e175]:
+                    - generic [ref=e176]:
+                      - generic [ref=e177]: Id
+                      - generic [ref=e178]: "01715"
+                  - cell " " [ref=e180]:
+                    - generic [ref=e181]:
+                      - button "" [ref=e182]:
+                        - generic [ref=e183]: 
+                      - button "" [ref=e184]:
+                        - generic [ref=e185]: 
+                - generic [ref=e186]:
+                  - cell "First (& Middle) Name Amelia" [ref=e187]:
+                    - generic [ref=e188]:
+                      - generic [ref=e189]: First (& Middle) Name
+                      - generic [ref=e190]: Amelia
+                  - cell "Last Name Brown" [ref=e191]:
+                    - generic [ref=e192]:
+                      - generic [ref=e193]: Last Name
+                      - generic [ref=e194]: Brown
+            - row "Id 938   First (& Middle) Name aniket Ashok Last Name patil" [ref=e196] [cursor=pointer]:
+              - generic [ref=e197]:
+                - generic [ref=e198]:
+                  - cell "Id 938" [ref=e200]:
+                    - generic [ref=e201]:
+                      - generic [ref=e202]: Id
+                      - generic [ref=e203]: "938"
+                  - cell " " [ref=e205]:
+                    - generic [ref=e206]:
+                      - button "" [ref=e207]:
+                        - generic [ref=e208]: 
+                      - button "" [ref=e209]:
+                        - generic [ref=e210]: 
+                - generic [ref=e211]:
+                  - cell "First (& Middle) Name aniket Ashok" [ref=e212]:
+                    - generic [ref=e213]:
+                      - generic [ref=e214]: First (& Middle) Name
+                      - generic [ref=e215]: aniket Ashok
+                  - cell "Last Name patil" [ref=e216]:
+                    - generic [ref=e217]:
+                      - generic [ref=e218]: Last Name
+                      - generic [ref=e219]: patil
+            - row "Id 0360   First (& Middle) Name aniket t Last Name t" [ref=e221] [cursor=pointer]:
+              - generic [ref=e222]:
+                - generic [ref=e223]:
+                  - cell "Id 0360" [ref=e225]:
+                    - generic [ref=e226]:
+                      - generic [ref=e227]: Id
+                      - generic [ref=e228]: "0360"
+                  - cell " " [ref=e230]:
+                    - generic [ref=e231]:
+                      - button "" [ref=e232]:
+                        - generic [ref=e233]: 
+                      - button "" [ref=e234]:
+                        - generic [ref=e235]: 
+                - generic [ref=e236]:
+                  - cell "First (& Middle) Name aniket t" [ref=e237]:
+                    - generic [ref=e238]:
+                      - generic [ref=e239]: First (& Middle) Name
+                      - generic [ref=e240]: aniket t
+                  - cell "Last Name t" [ref=e241]:
+                    - generic [ref=e242]:
+                      - generic [ref=e243]: Last Name
+                      - generic [ref=e244]: t
+            - row "Id 0565   First (& Middle) Name Anjali Last Name Reddy" [ref=e246] [cursor=pointer]:
+              - generic [ref=e247]:
+                - generic [ref=e248]:
+                  - cell "Id 0565" [ref=e250]:
+                    - generic [ref=e251]:
+                      - generic [ref=e252]: Id
+                      - generic [ref=e253]: "0565"
+                  - cell " " [ref=e255]:
+                    - generic [ref=e256]:
+                      - button "" [ref=e257]:
+                        - generic [ref=e258]: 
+                      - button "" [ref=e259]:
+                        - generic [ref=e260]: 
+                - generic [ref=e261]:
+                  - cell "First (& Middle) Name Anjali" [ref=e262]:
+                    - generic [ref=e263]:
+                      - generic [ref=e264]: First (& Middle) Name
+                      - generic [ref=e265]: Anjali
+                  - cell "Last Name Reddy" [ref=e266]:
+                    - generic [ref=e267]:
+                      - generic [ref=e268]: Last Name
+                      - generic [ref=e269]: Reddy
+            - row "  First (& Middle) Name Ankit Kumar Last Name singh Job Title Software Engineer" [ref=e271] [cursor=pointer]:
+              - generic [ref=e272]:
+                - cell " " [ref=e276]:
+                  - generic [ref=e277]:
+                    - button "" [ref=e278]:
+                      - generic [ref=e279]: 
+                    - button "" [ref=e280]:
+                      - generic [ref=e281]: 
+                - generic [ref=e282]:
+                  - cell "First (& Middle) Name Ankit Kumar" [ref=e283]:
+                    - generic [ref=e284]:
+                      - generic [ref=e285]: First (& Middle) Name
+                      - generic [ref=e286]: Ankit Kumar
+                  - cell "Last Name singh" [ref=e287]:
+                    - generic [ref=e288]:
+                      - generic [ref=e289]: Last Name
+                      - generic [ref=e290]: singh
+                  - cell "Job Title Software Engineer" [ref=e291]:
+                    - generic [ref=e292]:
+                      - generic [ref=e293]: Job Title
+                      - generic [ref=e294]: Software Engineer
+            - row "Id 0380   First (& Middle) Name Arthur Last Name Kline" [ref=e296] [cursor=pointer]:
+              - generic [ref=e297]:
+                - generic [ref=e298]:
+                  - cell "Id 0380" [ref=e300]:
+                    - generic [ref=e301]:
+                      - generic [ref=e302]: Id
+                      - generic [ref=e303]: "0380"
+                  - cell " " [ref=e305]:
+                    - generic [ref=e306]:
+                      - button "" [ref=e307]:
+                        - generic [ref=e308]: 
+                      - button "" [ref=e309]:
+                        - generic [ref=e310]: 
+                - generic [ref=e311]:
+                  - cell "First (& Middle) Name Arthur" [ref=e312]:
+                    - generic [ref=e313]:
+                      - generic [ref=e314]: First (& Middle) Name
+                      - generic [ref=e315]: Arthur
+                  - cell "Last Name Kline" [ref=e316]:
+                    - generic [ref=e317]:
+                      - generic [ref=e318]: Last Name
+                      - generic [ref=e319]: Kline
+            - row "Id 0367   First (& Middle) Name Ash J Last Name Tyson" [ref=e321] [cursor=pointer]:
+              - generic [ref=e322]:
+                - generic [ref=e323]:
+                  - cell "Id 0367" [ref=e325]:
+                    - generic [ref=e326]:
+                      - generic [ref=e327]: Id
+                      - generic [ref=e328]: "0367"
+                  - cell " " [ref=e330]:
+                    - generic [ref=e331]:
+                      - button "" [ref=e332]:
+                        - generic [ref=e333]: 
+                      - button "" [ref=e334]:
+                        - generic [ref=e335]: 
+                - generic [ref=e336]:
+                  - cell "First (& Middle) Name Ash J" [ref=e337]:
+                    - generic [ref=e338]:
+                      - generic [ref=e339]: First (& Middle) Name
+                      - generic [ref=e340]: Ash J
+                  - cell "Last Name Tyson" [ref=e341]:
+                    - generic [ref=e342]:
+                      - generic [ref=e343]: Last Name
+                      - generic [ref=e344]: Tyson
+            - row "Id 0666   First (& Middle) Name AutoTest Last Name UserPOS004" [ref=e346] [cursor=pointer]:
+              - generic [ref=e347]:
+                - generic [ref=e348]:
+                  - cell "Id 0666" [ref=e350]:
+                    - generic [ref=e351]:
+                      - generic [ref=e352]: Id
+                      - generic [ref=e353]: "0666"
+                  - cell " " [ref=e355]:
+                    - generic [ref=e356]:
+                      - button "" [ref=e357]:
+                        - generic [ref=e358]: 
+                      - button "" [ref=e359]:
+                        - generic [ref=e360]: 
+                - generic [ref=e361]:
+                  - cell "First (& Middle) Name AutoTest" [ref=e362]:
+                    - generic [ref=e363]:
+                      - generic [ref=e364]: First (& Middle) Name
+                      - generic [ref=e365]: AutoTest
+                  - cell "Last Name UserPOS004" [ref=e366]:
+                    - generic [ref=e367]:
+                      - generic [ref=e368]: Last Name
+                      - generic [ref=e369]: UserPOS004
+            - row "Id 0303   First (& Middle) Name bala kumar Last Name ravi" [ref=e371] [cursor=pointer]:
+              - generic [ref=e372]:
+                - generic [ref=e373]:
+                  - cell "Id 0303" [ref=e375]:
+                    - generic [ref=e376]:
+                      - generic [ref=e377]: Id
+                      - generic [ref=e378]: "0303"
+                  - cell " " [ref=e380]:
+                    - generic [ref=e381]:
+                      - button "" [ref=e382]:
+                        - generic [ref=e383]: 
+                      - button "" [ref=e384]:
+                        - generic [ref=e385]: 
+                - generic [ref=e386]:
+                  - cell "First (& Middle) Name bala kumar" [ref=e387]:
+                    - generic [ref=e388]:
+                      - generic [ref=e389]: First (& Middle) Name
+                      - generic [ref=e390]: bala kumar
+                  - cell "Last Name ravi" [ref=e391]:
+                    - generic [ref=e392]:
+                      - generic [ref=e393]: Last Name
+                      - generic [ref=e394]: ravi
+            - row "Id 0292   First (& Middle) Name bmrtahvwhibmrtahvwhi Last Name hbfqkhjfqbhbfqkhjfqb" [ref=e396] [cursor=pointer]:
+              - generic [ref=e397]:
+                - generic [ref=e398]:
+                  - cell "Id 0292" [ref=e400]:
+                    - generic [ref=e401]:
+                      - generic [ref=e402]: Id
+                      - generic [ref=e403]: "0292"
+                  - cell " " [ref=e405]:
+                    - generic [ref=e406]:
+                      - button "" [ref=e407]:
+                        - generic [ref=e408]: 
+                      - button "" [ref=e409]:
+                        - generic [ref=e410]: 
+                - generic [ref=e411]:
+                  - cell "First (& Middle) Name bmrtahvwhibmrtahvwhi" [ref=e412]:
+                    - generic [ref=e413]:
+                      - generic [ref=e414]: First (& Middle) Name
+                      - generic [ref=e415]: bmrtahvwhibmrtahvwhi
+                  - cell "Last Name hbfqkhjfqbhbfqkhjfqb" [ref=e416]:
+                    - generic [ref=e417]:
+                      - generic [ref=e418]: Last Name
+                      - generic [ref=e419]: hbfqkhjfqbhbfqkhjfqb
+            - row "Id 0377   First (& Middle) Name CalibreQA Last Name 1782626941297" [ref=e421] [cursor=pointer]:
+              - generic [ref=e422]:
+                - generic [ref=e423]:
+                  - cell "Id 0377" [ref=e425]:
+                    - generic [ref=e426]:
+                      - generic [ref=e427]: Id
+                      - generic [ref=e428]: "0377"
+                  - cell " " [ref=e430]:
+                    - generic [ref=e431]:
+                      - button "" [ref=e432]:
+                        - generic [ref=e433]: 
+                      - button "" [ref=e434]:
+                        - generic [ref=e435]: 
+                - generic [ref=e436]:
+                  - cell "First (& Middle) Name CalibreQA" [ref=e437]:
+                    - generic [ref=e438]:
+                      - generic [ref=e439]: First (& Middle) Name
+                      - generic [ref=e440]: CalibreQA
+                  - cell "Last Name 1782626941297" [ref=e441]:
+                    - generic [ref=e442]:
+                      - generic [ref=e443]: Last Name
+                      - generic [ref=e444]: "1782626941297"
+            - row "Id 0320   First (& Middle) Name Charles Last Name Carter" [ref=e446] [cursor=pointer]:
+              - generic [ref=e447]:
+                - generic [ref=e448]:
+                  - cell "Id 0320" [ref=e450]:
+                    - generic [ref=e451]:
+                      - generic [ref=e452]: Id
+                      - generic [ref=e453]: "0320"
+                  - cell " " [ref=e455]:
+                    - generic [ref=e456]:
+                      - button "" [ref=e457]:
+                        - generic [ref=e458]: 
+                      - button "" [ref=e459]:
+                        - generic [ref=e460]: 
+                - generic [ref=e461]:
+                  - cell "First (& Middle) Name Charles" [ref=e462]:
+                    - generic [ref=e463]:
+                      - generic [ref=e464]: First (& Middle) Name
+                      - generic [ref=e465]: Charles
+                  - cell "Last Name Carter" [ref=e466]:
+                    - generic [ref=e467]:
+                      - generic [ref=e468]: Last Name
+                      - generic [ref=e469]: Carter
+            - row "Id 0393   First (& Middle) Name Charlotte Last Name Marks" [ref=e471] [cursor=pointer]:
+              - generic [ref=e472]:
+                - generic [ref=e473]:
+                  - cell "Id 0393" [ref=e475]:
+                    - generic [ref=e476]:
+                      - generic [ref=e477]: Id
+                      - generic [ref=e478]: "0393"
+                  - cell " " [ref=e480]:
+                    - generic [ref=e481]:
+                      - button "" [ref=e482]:
+                        - generic [ref=e483]: 
+                      - button "" [ref=e484]:
+                        - generic [ref=e485]: 
+                - generic [ref=e486]:
+                  - cell "First (& Middle) Name Charlotte" [ref=e487]:
+                    - generic [ref=e488]:
+                      - generic [ref=e489]: First (& Middle) Name
+                      - generic [ref=e490]: Charlotte
+                  - cell "Last Name Marks" [ref=e491]:
+                    - generic [ref=e492]:
+                      - generic [ref=e493]: Last Name
+                      - generic [ref=e494]: Marks
+            - row "Id 00392   First (& Middle) Name Charlotte Last Name Smith" [ref=e496] [cursor=pointer]:
+              - generic [ref=e497]:
+                - generic [ref=e498]:
+                  - cell "Id 00392" [ref=e500]:
+                    - generic [ref=e501]:
+                      - generic [ref=e502]: Id
+                      - generic [ref=e503]: "00392"
+                  - cell " " [ref=e505]:
+                    - generic [ref=e506]:
+                      - button "" [ref=e507]:
+                        - generic [ref=e508]: 
+                      - button "" [ref=e509]:
+                        - generic [ref=e510]: 
+                - generic [ref=e511]:
+                  - cell "First (& Middle) Name Charlotte" [ref=e512]:
+                    - generic [ref=e513]:
+                      - generic [ref=e514]: First (& Middle) Name
+                      - generic [ref=e515]: Charlotte
+                  - cell "Last Name Smith" [ref=e516]:
+                    - generic [ref=e517]:
+                      - generic [ref=e518]: Last Name
+                      - generic [ref=e519]: Smith
+            - row "Id 0363   First (& Middle) Name Christopher Last Name Mcmillan" [ref=e521] [cursor=pointer]:
+              - generic [ref=e522]:
+                - generic [ref=e523]:
+                  - cell "Id 0363" [ref=e525]:
+                    - generic [ref=e526]:
+                      - generic [ref=e527]: Id
+                      - generic [ref=e528]: "0363"
+                  - cell " " [ref=e530]:
+                    - generic [ref=e531]:
+                      - button "" [ref=e532]:
+                        - generic [ref=e533]: 
+                      - button "" [ref=e534]:
+                        - generic [ref=e535]: 
+                - generic [ref=e536]:
+                  - cell "First (& Middle) Name Christopher" [ref=e537]:
+                    - generic [ref=e538]:
+                      - generic [ref=e539]: First (& Middle) Name
+                      - generic [ref=e540]: Christopher
+                  - cell "Last Name Mcmillan" [ref=e541]:
+                    - generic [ref=e542]:
+                      - generic [ref=e543]: Last Name
+                      - generic [ref=e544]: Mcmillan
+            - row "Id 0605   First (& Middle) Name CMS Last Name CPQ" [ref=e546] [cursor=pointer]:
+              - generic [ref=e547]:
+                - generic [ref=e548]:
+                  - cell "Id 0605" [ref=e550]:
+                    - generic [ref=e551]:
+                      - generic [ref=e552]: Id
+                      - generic [ref=e553]: "0605"
+                  - cell " " [ref=e555]:
+                    - generic [ref=e556]:
+                      - button "" [ref=e557]:
+                        - generic [ref=e558]: 
+                      - button "" [ref=e559]:
+                        - generic [ref=e560]: 
+                - generic [ref=e561]:
+                  - cell "First (& Middle) Name CMS" [ref=e562]:
+                    - generic [ref=e563]:
+                      - generic [ref=e564]: First (& Middle) Name
+                      - generic [ref=e565]: CMS
+                  - cell "Last Name CPQ" [ref=e566]:
+                    - generic [ref=e567]:
+                      - generic [ref=e568]: Last Name
+                      - generic [ref=e569]: CPQ
+            - row "Id 0610   First (& Middle) Name CMS Last Name CPQ" [ref=e571] [cursor=pointer]:
+              - generic [ref=e572]:
+                - generic [ref=e573]:
+                  - cell "Id 0610" [ref=e575]:
+                    - generic [ref=e576]:
+                      - generic [ref=e577]: Id
+                      - generic [ref=e578]: "0610"
+                  - cell " " [ref=e580]:
+                    - generic [ref=e581]:
+                      - button "" [ref=e582]:
+                        - generic [ref=e583]: 
+                      - button "" [ref=e584]:
+                        - generic [ref=e585]: 
+                - generic [ref=e586]:
+                  - cell "First (& Middle) Name CMS" [ref=e587]:
+                    - generic [ref=e588]:
+                      - generic [ref=e589]: First (& Middle) Name
+                      - generic [ref=e590]: CMS
+                  - cell "Last Name CPQ" [ref=e591]:
+                    - generic [ref=e592]:
+                      - generic [ref=e593]: Last Name
+                      - generic [ref=e594]: CPQ
+            - row "Id 0613   First (& Middle) Name CMS Last Name CPQ" [ref=e596] [cursor=pointer]:
+              - generic [ref=e597]:
+                - generic [ref=e598]:
+                  - cell "Id 0613" [ref=e600]:
+                    - generic [ref=e601]:
+                      - generic [ref=e602]: Id
+                      - generic [ref=e603]: "0613"
+                  - cell " " [ref=e605]:
+                    - generic [ref=e606]:
+                      - button "" [ref=e607]:
+                        - generic [ref=e608]: 
+                      - button "" [ref=e609]:
+                        - generic [ref=e610]: 
+                - generic [ref=e611]:
+                  - cell "First (& Middle) Name CMS" [ref=e612]:
+                    - generic [ref=e613]:
+                      - generic [ref=e614]: First (& Middle) Name
+                      - generic [ref=e615]: CMS
+                  - cell "Last Name CPQ" [ref=e616]:
+                    - generic [ref=e617]:
+                      - generic [ref=e618]: Last Name
+                      - generic [ref=e619]: CPQ
+            - row "Id 0606   First (& Middle) Name CMS Last Name CPQ" [ref=e621] [cursor=pointer]:
+              - generic [ref=e622]:
+                - generic [ref=e623]:
+                  - cell "Id 0606" [ref=e625]:
+                    - generic [ref=e626]:
+                      - generic [ref=e627]: Id
+                      - generic [ref=e628]: "0606"
+                  - cell " " [ref=e630]:
+                    - generic [ref=e631]:
+                      - button "" [ref=e632]:
+                        - generic [ref=e633]: 
+                      - button "" [ref=e634]:
+                        - generic [ref=e635]: 
+                - generic [ref=e636]:
+                  - cell "First (& Middle) Name CMS" [ref=e637]:
+                    - generic [ref=e638]:
+                      - generic [ref=e639]: First (& Middle) Name
+                      - generic [ref=e640]: CMS
+                  - cell "Last Name CPQ" [ref=e641]:
+                    - generic [ref=e642]:
+                      - generic [ref=e643]: Last Name
+                      - generic [ref=e644]: CPQ
+            - row "Id 0628060813   First (& Middle) Name DataUser01 Last Name TestLast01" [ref=e646] [cursor=pointer]:
+              - generic [ref=e647]:
+                - generic [ref=e648]:
+                  - cell "Id 0628060813" [ref=e650]:
+                    - generic [ref=e651]:
+                      - generic [ref=e652]: Id
+                      - generic [ref=e653]: "0628060813"
+                  - cell " " [ref=e655]:
+                    - generic [ref=e656]:
+                      - button "" [ref=e657]:
+                        - generic [ref=e658]: 
+                      - button "" [ref=e659]:
+                        - generic [ref=e660]: 
+                - generic [ref=e661]:
+                  - cell "First (& Middle) Name DataUser01" [ref=e662]:
+                    - generic [ref=e663]:
+                      - generic [ref=e664]: First (& Middle) Name
+                      - generic [ref=e665]: DataUser01
+                  - cell "Last Name TestLast01" [ref=e666]:
+                    - generic [ref=e667]:
+                      - generic [ref=e668]: Last Name
+                      - generic [ref=e669]: TestLast01
+            - row "Id 0628060837   First (& Middle) Name DataUser02 Last Name TestLast02" [ref=e671] [cursor=pointer]:
+              - generic [ref=e672]:
+                - generic [ref=e673]:
+                  - cell "Id 0628060837" [ref=e675]:
+                    - generic [ref=e676]:
+                      - generic [ref=e677]: Id
+                      - generic [ref=e678]: "0628060837"
+                  - cell " " [ref=e680]:
+                    - generic [ref=e681]:
+                      - button "" [ref=e682]:
+                        - generic [ref=e683]: 
+                      - button "" [ref=e684]:
+                        - generic [ref=e685]: 
+                - generic [ref=e686]:
+                  - cell "First (& Middle) Name DataUser02" [ref=e687]:
+                    - generic [ref=e688]:
+                      - generic [ref=e689]: First (& Middle) Name
+                      - generic [ref=e690]: DataUser02
+                  - cell "Last Name TestLast02" [ref=e691]:
+                    - generic [ref=e692]:
+                      - generic [ref=e693]: Last Name
+                      - generic [ref=e694]: TestLast02
+            - row "Id 0628060914   First (& Middle) Name DataUser03 Last Name TestLast03" [ref=e696] [cursor=pointer]:
+              - generic [ref=e697]:
+                - generic [ref=e698]:
+                  - cell "Id 0628060914" [ref=e700]:
+                    - generic [ref=e701]:
+                      - generic [ref=e702]: Id
+                      - generic [ref=e703]: "0628060914"
+                  - cell " " [ref=e705]:
+                    - generic [ref=e706]:
+                      - button "" [ref=e707]:
+                        - generic [ref=e708]: 
+                      - button "" [ref=e709]:
+                        - generic [ref=e710]: 
+                - generic [ref=e711]:
+                  - cell "First (& Middle) Name DataUser03" [ref=e712]:
+                    - generic [ref=e713]:
+                      - generic [ref=e714]: First (& Middle) Name
+                      - generic [ref=e715]: DataUser03
+                  - cell "Last Name TestLast03" [ref=e716]:
+                    - generic [ref=e717]:
+                      - generic [ref=e718]: Last Name
+                      - generic [ref=e719]: TestLast03
+            - row "Id 0628060942   First (& Middle) Name DataUser04 Last Name TestLast04" [ref=e721] [cursor=pointer]:
+              - generic [ref=e722]:
+                - generic [ref=e723]:
+                  - cell "Id 0628060942" [ref=e725]:
+                    - generic [ref=e726]:
+                      - generic [ref=e727]: Id
+                      - generic [ref=e728]: "0628060942"
+                  - cell " " [ref=e730]:
+                    - generic [ref=e731]:
+                      - button "" [ref=e732]:
+                        - generic [ref=e733]: 
+                      - button "" [ref=e734]:
+                        - generic [ref=e735]: 
+                - generic [ref=e736]:
+                  - cell "First (& Middle) Name DataUser04" [ref=e737]:
+                    - generic [ref=e738]:
+                      - generic [ref=e739]: First (& Middle) Name
+                      - generic [ref=e740]: DataUser04
+                  - cell "Last Name TestLast04" [ref=e741]:
+                    - generic [ref=e742]:
+                      - generic [ref=e743]: Last Name
+                      - generic [ref=e744]: TestLast04
+            - row "Id 0628061010   First (& Middle) Name DataUser05 Last Name TestLast05" [ref=e746] [cursor=pointer]:
+              - generic [ref=e747]:
+                - generic [ref=e748]:
+                  - cell "Id 0628061010" [ref=e750]:
+                    - generic [ref=e751]:
+                      - generic [ref=e752]: Id
+                      - generic [ref=e753]: "0628061010"
+                  - cell " " [ref=e755]:
+                    - generic [ref=e756]:
+                      - button "" [ref=e757]:
+                        - generic [ref=e758]: 
+                      - button "" [ref=e759]:
+                        - generic [ref=e760]: 
+                - generic [ref=e761]:
+                  - cell "First (& Middle) Name DataUser05" [ref=e762]:
+                    - generic [ref=e763]:
+                      - generic [ref=e764]: First (& Middle) Name
+                      - generic [ref=e765]: DataUser05
+                  - cell "Last Name TestLast05" [ref=e766]:
+                    - generic [ref=e767]:
+                      - generic [ref=e768]: Last Name
+                      - generic [ref=e769]: TestLast05
+            - row "Id EMP740560   First (& Middle) Name DevUser1 Last Name Automation" [ref=e771] [cursor=pointer]:
+              - generic [ref=e772]:
+                - generic [ref=e773]:
+                  - cell "Id EMP740560" [ref=e775]:
+                    - generic [ref=e776]:
+                      - generic [ref=e777]: Id
+                      - generic [ref=e778]: EMP740560
+                  - cell " " [ref=e780]:
+                    - generic [ref=e781]:
+                      - button "" [ref=e782]:
+                        - generic [ref=e783]: 
+                      - button "" [ref=e784]:
+                        - generic [ref=e785]: 
+                - generic [ref=e786]:
+                  - cell "First (& Middle) Name DevUser1" [ref=e787]:
+                    - generic [ref=e788]:
+                      - generic [ref=e789]: First (& Middle) Name
+                      - generic [ref=e790]: DevUser1
+                  - cell "Last Name Automation" [ref=e791]:
+                    - generic [ref=e792]:
+                      - generic [ref=e793]: Last Name
+                      - generic [ref=e794]: Automation
+            - row "Id EMP618138   First (& Middle) Name DevUser1 Last Name Automation" [ref=e796] [cursor=pointer]:
+              - generic [ref=e797]:
+                - generic [ref=e798]:
+                  - cell "Id EMP618138" [ref=e800]:
+                    - generic [ref=e801]:
+                      - generic [ref=e802]: Id
+                      - generic [ref=e803]: EMP618138
+                  - cell " " [ref=e805]:
+                    - generic [ref=e806]:
+                      - button "" [ref=e807]:
+                        - generic [ref=e808]: 
+                      - button "" [ref=e809]:
+                        - generic [ref=e810]: 
+                - generic [ref=e811]:
+                  - cell "First (& Middle) Name DevUser1" [ref=e812]:
+                    - generic [ref=e813]:
+                      - generic [ref=e814]: First (& Middle) Name
+                      - generic [ref=e815]: DevUser1
+                  - cell "Last Name Automation" [ref=e816]:
+                    - generic [ref=e817]:
+                      - generic [ref=e818]: Last Name
+                      - generic [ref=e819]: Automation
+            - row "Id 0312   First (& Middle) Name DharmendraUpdated 4Ys Last Name 010Z" [ref=e821] [cursor=pointer]:
+              - generic [ref=e822]:
+                - generic [ref=e823]:
+                  - cell "Id 0312" [ref=e825]:
+                    - generic [ref=e826]:
+                      - generic [ref=e827]: Id
+                      - generic [ref=e828]: "0312"
+                  - cell " " [ref=e830]:
+                    - generic [ref=e831]:
+                      - button "" [ref=e832]:
+                        - generic [ref=e833]: 
+                      - button "" [ref=e834]:
+                        - generic [ref=e835]: 
+                - generic [ref=e836]:
+                  - cell "First (& Middle) Name DharmendraUpdated 4Ys" [ref=e837]:
+                    - generic [ref=e838]:
+                      - generic [ref=e839]: First (& Middle) Name
+                      - generic [ref=e840]: DharmendraUpdated 4Ys
+                  - cell "Last Name 010Z" [ref=e841]:
+                    - generic [ref=e842]:
+                      - generic [ref=e843]: Last Name
+                      - generic [ref=e844]: 010Z
+            - row "Id 0290   First (& Middle) Name dhbrukkuzldhbrukkuzl Last Name ibuvlwtfsfibuvlwtfsf" [ref=e846] [cursor=pointer]:
+              - generic [ref=e847]:
+                - generic [ref=e848]:
+                  - cell "Id 0290" [ref=e850]:
+                    - generic [ref=e851]:
+                      - generic [ref=e852]: Id
+                      - generic [ref=e853]: "0290"
+                  - cell " " [ref=e855]:
+                    - generic [ref=e856]:
+                      - button "" [ref=e857]:
+                        - generic [ref=e858]: 
+                      - button "" [ref=e859]:
+                        - generic [ref=e860]: 
+                - generic [ref=e861]:
+                  - cell "First (& Middle) Name dhbrukkuzldhbrukkuzl" [ref=e862]:
+                    - generic [ref=e863]:
+                      - generic [ref=e864]: First (& Middle) Name
+                      - generic [ref=e865]: dhbrukkuzldhbrukkuzl
+                  - cell "Last Name ibuvlwtfsfibuvlwtfsf" [ref=e866]:
+                    - generic [ref=e867]:
+                      - generic [ref=e868]: Last Name
+                      - generic [ref=e869]: ibuvlwtfsfibuvlwtfsf
+            - row "Id 0294   First (& Middle) Name DHINA KARAN Last Name P" [ref=e871] [cursor=pointer]:
+              - generic [ref=e872]:
+                - generic [ref=e873]:
+                  - cell "Id 0294" [ref=e875]:
+                    - generic [ref=e876]:
+                      - generic [ref=e877]: Id
+                      - generic [ref=e878]: "0294"
+                  - cell " " [ref=e880]:
+                    - generic [ref=e881]:
+                      - button "" [ref=e882]:
+                        - generic [ref=e883]: 
+                      - button "" [ref=e884]:
+                        - generic [ref=e885]: 
+                - generic [ref=e886]:
+                  - cell "First (& Middle) Name DHINA KARAN" [ref=e887]:
+                    - generic [ref=e888]:
+                      - generic [ref=e889]: First (& Middle) Name
+                      - generic [ref=e890]: DHINA KARAN
+                  - cell "Last Name P" [ref=e891]:
+                    - generic [ref=e892]:
+                      - generic [ref=e893]: Last Name
+                      - generic [ref=e894]: P
+            - row "Id 0408   First (& Middle) Name Dianne Last Name Kessler" [ref=e896] [cursor=pointer]:
+              - generic [ref=e897]:
+                - generic [ref=e898]:
+                  - cell "Id 0408" [ref=e900]:
+                    - generic [ref=e901]:
+                      - generic [ref=e902]: Id
+                      - generic [ref=e903]: "0408"
+                  - cell " " [ref=e905]:
+                    - generic [ref=e906]:
+                      - button "" [ref=e907]:
+                        - generic [ref=e908]: 
+                      - button "" [ref=e909]:
+                        - generic [ref=e910]: 
+                - generic [ref=e911]:
+                  - cell "First (& Middle) Name Dianne" [ref=e912]:
+                    - generic [ref=e913]:
+                      - generic [ref=e914]: First (& Middle) Name
+                      - generic [ref=e915]: Dianne
+                  - cell "Last Name Kessler" [ref=e916]:
+                    - generic [ref=e917]:
+                      - generic [ref=e918]: Last Name
+                      - generic [ref=e919]: Kessler
+            - row "Id 09557   First (& Middle) Name Emily Last Name Jones" [ref=e921] [cursor=pointer]:
+              - generic [ref=e922]:
+                - generic [ref=e923]:
+                  - cell "Id 09557" [ref=e925]:
+                    - generic [ref=e926]:
+                      - generic [ref=e927]: Id
+                      - generic [ref=e928]: "09557"
+                  - cell " " [ref=e930]:
+                    - generic [ref=e931]:
+                      - button "" [ref=e932]:
+                        - generic [ref=e933]: 
+                      - button "" [ref=e934]:
+                        - generic [ref=e935]: 
+                - generic [ref=e936]:
+                  - cell "First (& Middle) Name Emily" [ref=e937]:
+                    - generic [ref=e938]:
+                      - generic [ref=e939]: First (& Middle) Name
+                      - generic [ref=e940]: Emily
+                  - cell "Last Name Jones" [ref=e941]:
+                    - generic [ref=e942]:
+                      - generic [ref=e943]: Last Name
+                      - generic [ref=e944]: Jones
+            - row "Id 3115   First (& Middle) Name Eulah Last Name Bergnaum" [ref=e946] [cursor=pointer]:
+              - generic [ref=e947]:
+                - generic [ref=e948]:
+                  - cell "Id 3115" [ref=e950]:
+                    - generic [ref=e951]:
+                      - generic [ref=e952]: Id
+                      - generic [ref=e953]: "3115"
+                  - cell " " [ref=e955]:
+                    - generic [ref=e956]:
+                      - button "" [ref=e957]:
+                        - generic [ref=e958]: 
+                      - button "" [ref=e959]:
+                        - generic [ref=e960]: 
+                - generic [ref=e961]:
+                  - cell "First (& Middle) Name Eulah" [ref=e962]:
+                    - generic [ref=e963]:
+                      - generic [ref=e964]: First (& Middle) Name
+                      - generic [ref=e965]: Eulah
+                  - cell "Last Name Bergnaum" [ref=e966]:
+                    - generic [ref=e967]:
+                      - generic [ref=e968]: Last Name
+                      - generic [ref=e969]: Bergnaum
+            - row "Id 1235   First (& Middle) Name FName Mname Last Name LName" [ref=e971] [cursor=pointer]:
+              - generic [ref=e972]:
+                - generic [ref=e973]:
+                  - cell "Id 1235" [ref=e975]:
+                    - generic [ref=e976]:
+                      - generic [ref=e977]: Id
+                      - generic [ref=e978]: "1235"
+                  - cell " " [ref=e980]:
+                    - generic [ref=e981]:
+                      - button "" [ref=e982]:
+                        - generic [ref=e983]: 
+                      - button "" [ref=e984]:
+                        - generic [ref=e985]: 
+                - generic [ref=e986]:
+                  - cell "First (& Middle) Name FName Mname" [ref=e987]:
+                    - generic [ref=e988]:
+                      - generic [ref=e989]: First (& Middle) Name
+                      - generic [ref=e990]: FName Mname
+                  - cell "Last Name LName" [ref=e991]:
+                    - generic [ref=e992]:
+                      - generic [ref=e993]: Last Name
+                      - generic [ref=e994]: LName
+            - row "Id ATPValue   First (& Middle) Name ftdkux Last Name ltsxgy" [ref=e996] [cursor=pointer]:
+              - generic [ref=e997]:
+                - generic [ref=e998]:
+                  - cell "Id ATPValue" [ref=e1000]:
+                    - generic [ref=e1001]:
+                      - generic [ref=e1002]: Id
+                      - generic [ref=e1003]: ATPValue
+                  - cell " " [ref=e1005]:
+                    - generic [ref=e1006]:
+                      - button "" [ref=e1007]:
+                        - generic [ref=e1008]: 
+                      - button "" [ref=e1009]:
+                        - generic [ref=e1010]: 
+                - generic [ref=e1011]:
+                  - cell "First (& Middle) Name ftdkux" [ref=e1012]:
+                    - generic [ref=e1013]:
+                      - generic [ref=e1014]: First (& Middle) Name
+                      - generic [ref=e1015]: ftdkux
+                  - cell "Last Name ltsxgy" [ref=e1016]:
+                    - generic [ref=e1017]:
+                      - generic [ref=e1018]: Last Name
+                      - generic [ref=e1019]: ltsxgy
+            - row "Id ATPValue   First (& Middle) Name fthnvn Last Name ltwrrt" [ref=e1021] [cursor=pointer]:
+              - generic [ref=e1022]:
+                - generic [ref=e1023]:
+                  - cell "Id ATPValue" [ref=e1025]:
+                    - generic [ref=e1026]:
+                      - generic [ref=e1027]: Id
+                      - generic [ref=e1028]: ATPValue
+                  - cell " " [ref=e1030]:
+                    - generic [ref=e1031]:
+                      - button "" [ref=e1032]:
+                        - generic [ref=e1033]: 
+                      - button "" [ref=e1034]:
+                        - generic [ref=e1035]: 
+                - generic [ref=e1036]:
+                  - cell "First (& Middle) Name fthnvn" [ref=e1037]:
+                    - generic [ref=e1038]:
+                      - generic [ref=e1039]: First (& Middle) Name
+                      - generic [ref=e1040]: fthnvn
+                  - cell "Last Name ltwrrt" [ref=e1041]:
+                    - generic [ref=e1042]:
+                      - generic [ref=e1043]: Last Name
+                      - generic [ref=e1044]: ltwrrt
+            - row "Id ATPValue   First (& Middle) Name fthnvn Last Name ltwrrt" [ref=e1046] [cursor=pointer]:
+              - generic [ref=e1047]:
+                - generic [ref=e1048]:
+                  - cell "Id ATPValue" [ref=e1050]:
+                    - generic [ref=e1051]:
+                      - generic [ref=e1052]: Id
+                      - generic [ref=e1053]: ATPValue
+                  - cell " " [ref=e1055]:
+                    - generic [ref=e1056]:
+                      - button "" [ref=e1057]:
+                        - generic [ref=e1058]: 
+                      - button "" [ref=e1059]:
+                        - generic [ref=e1060]: 
+                - generic [ref=e1061]:
+                  - cell "First (& Middle) Name fthnvn" [ref=e1062]:
+                    - generic [ref=e1063]:
+                      - generic [ref=e1064]: First (& Middle) Name
+                      - generic [ref=e1065]: fthnvn
+                  - cell "Last Name ltwrrt" [ref=e1066]:
+                    - generic [ref=e1067]:
+                      - generic [ref=e1068]: Last Name
+                      - generic [ref=e1069]: ltwrrt
+            - row "Id ATPValue   First (& Middle) Name fthyfv Last Name ltrhtm" [ref=e1071] [cursor=pointer]:
+              - generic [ref=e1072]:
+                - generic [ref=e1073]:
+                  - cell "Id ATPValue" [ref=e1075]:
+                    - generic [ref=e1076]:
+                      - generic [ref=e1077]: Id
+                      - generic [ref=e1078]: ATPValue
+                  - cell " " [ref=e1080]:
+                    - generic [ref=e1081]:
+                      - button "" [ref=e1082]:
+                        - generic [ref=e1083]: 
+                      - button "" [ref=e1084]:
+                        - generic [ref=e1085]: 
+                - generic [ref=e1086]:
+                  - cell "First (& Middle) Name fthyfv" [ref=e1087]:
+                    - generic [ref=e1088]:
+                      - generic [ref=e1089]: First (& Middle) Name
+                      - generic [ref=e1090]: fthyfv
+                  - cell "Last Name ltrhtm" [ref=e1091]:
+                    - generic [ref=e1092]:
+                      - generic [ref=e1093]: Last Name
+                      - generic [ref=e1094]: ltrhtm
+            - row "Id ATPValue   First (& Middle) Name ftioiu Last Name ltpugr" [ref=e1096] [cursor=pointer]:
+              - generic [ref=e1097]:
+                - generic [ref=e1098]:
+                  - cell "Id ATPValue" [ref=e1100]:
+                    - generic [ref=e1101]:
+                      - generic [ref=e1102]: Id
+                      - generic [ref=e1103]: ATPValue
+                  - cell " " [ref=e1105]:
+                    - generic [ref=e1106]:
+                      - button "" [ref=e1107]:
+                        - generic [ref=e1108]: 
+                      - button "" [ref=e1109]:
+                        - generic [ref=e1110]: 
+                - generic [ref=e1111]:
+                  - cell "First (& Middle) Name ftioiu" [ref=e1112]:
+                    - generic [ref=e1113]:
+                      - generic [ref=e1114]: First (& Middle) Name
+                      - generic [ref=e1115]: ftioiu
+                  - cell "Last Name ltpugr" [ref=e1116]:
+                    - generic [ref=e1117]:
+                      - generic [ref=e1118]: Last Name
+                      - generic [ref=e1119]: ltpugr
+            - row "Id ATPValue   First (& Middle) Name ftioiu Last Name ltpugr" [ref=e1121] [cursor=pointer]:
+              - generic [ref=e1122]:
+                - generic [ref=e1123]:
+                  - cell "Id ATPValue" [ref=e1125]:
+                    - generic [ref=e1126]:
+                      - generic [ref=e1127]: Id
+                      - generic [ref=e1128]: ATPValue
+                  - cell " " [ref=e1130]:
+                    - generic [ref=e1131]:
+                      - button "" [ref=e1132]:
+                        - generic [ref=e1133]: 
+                      - button "" [ref=e1134]:
+                        - generic [ref=e1135]: 
+                - generic [ref=e1136]:
+                  - cell "First (& Middle) Name ftioiu" [ref=e1137]:
+                    - generic [ref=e1138]:
+                      - generic [ref=e1139]: First (& Middle) Name
+                      - generic [ref=e1140]: ftioiu
+                  - cell "Last Name ltpugr" [ref=e1141]:
+                    - generic [ref=e1142]:
+                      - generic [ref=e1143]: Last Name
+                      - generic [ref=e1144]: ltpugr
+            - row "Id ATPValue   First (& Middle) Name ftioiu Last Name ltpugr" [ref=e1146] [cursor=pointer]:
+              - generic [ref=e1147]:
+                - generic [ref=e1148]:
+                  - cell "Id ATPValue" [ref=e1150]:
+                    - generic [ref=e1151]:
+                      - generic [ref=e1152]: Id
+                      - generic [ref=e1153]: ATPValue
+                  - cell " " [ref=e1155]:
+                    - generic [ref=e1156]:
+                      - button "" [ref=e1157]:
+                        - generic [ref=e1158]: 
+                      - button "" [ref=e1159]:
+                        - generic [ref=e1160]: 
+                - generic [ref=e1161]:
+                  - cell "First (& Middle) Name ftioiu" [ref=e1162]:
+                    - generic [ref=e1163]:
+                      - generic [ref=e1164]: First (& Middle) Name
+                      - generic [ref=e1165]: ftioiu
+                  - cell "Last Name ltpugr" [ref=e1166]:
+                    - generic [ref=e1167]:
+                      - generic [ref=e1168]: Last Name
+                      - generic [ref=e1169]: ltpugr
+            - row "Id ATPValue   First (& Middle) Name ftioiu Last Name ltpugr" [ref=e1171] [cursor=pointer]:
+              - generic [ref=e1172]:
+                - generic [ref=e1173]:
+                  - cell "Id ATPValue" [ref=e1175]:
+                    - generic [ref=e1176]:
+                      - generic [ref=e1177]: Id
+                      - generic [ref=e1178]: ATPValue
+                  - cell " " [ref=e1180]:
+                    - generic [ref=e1181]:
+                      - button "" [ref=e1182]:
+                        - generic [ref=e1183]: 
+                      - button "" [ref=e1184]:
+                        - generic [ref=e1185]: 
+                - generic [ref=e1186]:
+                  - cell "First (& Middle) Name ftioiu" [ref=e1187]:
+                    - generic [ref=e1188]:
+                      - generic [ref=e1189]: First (& Middle) Name
+                      - generic [ref=e1190]: ftioiu
+                  - cell "Last Name ltpugr" [ref=e1191]:
+                    - generic [ref=e1192]:
+                      - generic [ref=e1193]: Last Name
+                      - generic [ref=e1194]: ltpugr
+            - row "Id ATPValue   First (& Middle) Name ftndlm Last Name ltdyyf" [ref=e1196] [cursor=pointer]:
+              - generic [ref=e1197]:
+                - generic [ref=e1198]:
+                  - cell "Id ATPValue" [ref=e1200]:
+                    - generic [ref=e1201]:
+                      - generic [ref=e1202]: Id
+                      - generic [ref=e1203]: ATPValue
+                  - cell " " [ref=e1205]:
+                    - generic [ref=e1206]:
+                      - button "" [ref=e1207]:
+                        - generic [ref=e1208]: 
+                      - button "" [ref=e1209]:
+                        - generic [ref=e1210]: 
+                - generic [ref=e1211]:
+                  - cell "First (& Middle) Name ftndlm" [ref=e1212]:
+                    - generic [ref=e1213]:
+                      - generic [ref=e1214]: First (& Middle) Name
+                      - generic [ref=e1215]: ftndlm
+                  - cell "Last Name ltdyyf" [ref=e1216]:
+                    - generic [ref=e1217]:
+                      - generic [ref=e1218]: Last Name
+                      - generic [ref=e1219]: ltdyyf
+            - row "Id ATPValue   First (& Middle) Name ftpjte Last Name ltpzkj" [ref=e1221] [cursor=pointer]:
+              - generic [ref=e1222]:
+                - generic [ref=e1223]:
+                  - cell "Id ATPValue" [ref=e1225]:
+                    - generic [ref=e1226]:
+                      - generic [ref=e1227]: Id
+                      - generic [ref=e1228]: ATPValue
+                  - cell " " [ref=e1230]:
+                    - generic [ref=e1231]:
+                      - button "" [ref=e1232]:
+                        - generic [ref=e1233]: 
+                      - button "" [ref=e1234]:
+                        - generic [ref=e1235]: 
+                - generic [ref=e1236]:
+                  - cell "First (& Middle) Name ftpjte" [ref=e1237]:
+                    - generic [ref=e1238]:
+                      - generic [ref=e1239]: First (& Middle) Name
+                      - generic [ref=e1240]: ftpjte
+                  - cell "Last Name ltpzkj" [ref=e1241]:
+                    - generic [ref=e1242]:
+                      - generic [ref=e1243]: Last Name
+                      - generic [ref=e1244]: ltpzkj
+            - row "Id ATPValue   First (& Middle) Name ftyseo Last Name ltzbbp" [ref=e1246] [cursor=pointer]:
+              - generic [ref=e1247]:
+                - generic [ref=e1248]:
+                  - cell "Id ATPValue" [ref=e1250]:
+                    - generic [ref=e1251]:
+                      - generic [ref=e1252]: Id
+                      - generic [ref=e1253]: ATPValue
+                  - cell " " [ref=e1255]:
+                    - generic [ref=e1256]:
+                      - button "" [ref=e1257]:
+                        - generic [ref=e1258]: 
+                      - button "" [ref=e1259]:
+                        - generic [ref=e1260]: 
+                - generic [ref=e1261]:
+                  - cell "First (& Middle) Name ftyseo" [ref=e1262]:
+                    - generic [ref=e1263]:
+                      - generic [ref=e1264]: First (& Middle) Name
+                      - generic [ref=e1265]: ftyseo
+                  - cell "Last Name ltzbbp" [ref=e1266]:
+                    - generic [ref=e1267]:
+                      - generic [ref=e1268]: Last Name
+                      - generic [ref=e1269]: ltzbbp
+            - row "Id ATPValue   First (& Middle) Name ftyseo Last Name ltzbbp" [ref=e1271] [cursor=pointer]:
+              - generic [ref=e1272]:
+                - generic [ref=e1273]:
+                  - cell "Id ATPValue" [ref=e1275]:
+                    - generic [ref=e1276]:
+                      - generic [ref=e1277]: Id
+                      - generic [ref=e1278]: ATPValue
+                  - cell " " [ref=e1280]:
+                    - generic [ref=e1281]:
+                      - button "" [ref=e1282]:
+                        - generic [ref=e1283]: 
+                      - button "" [ref=e1284]:
+                        - generic [ref=e1285]: 
+                - generic [ref=e1286]:
+                  - cell "First (& Middle) Name ftyseo" [ref=e1287]:
+                    - generic [ref=e1288]:
+                      - generic [ref=e1289]: First (& Middle) Name
+                      - generic [ref=e1290]: ftyseo
+                  - cell "Last Name ltzbbp" [ref=e1291]:
+                    - generic [ref=e1292]:
+                      - generic [ref=e1293]: Last Name
+                      - generic [ref=e1294]: ltzbbp
+            - row "Id ATPValue   First (& Middle) Name ftyseo Last Name ltzbbp" [ref=e1296] [cursor=pointer]:
+              - generic [ref=e1297]:
+                - generic [ref=e1298]:
+                  - cell "Id ATPValue" [ref=e1300]:
+                    - generic [ref=e1301]:
+                      - generic [ref=e1302]: Id
+                      - generic [ref=e1303]: ATPValue
+                  - cell " " [ref=e1305]:
+                    - generic [ref=e1306]:
+                      - button "" [ref=e1307]:
+                        - generic [ref=e1308]: 
+                      - button "" [ref=e1309]:
+                        - generic [ref=e1310]: 
+                - generic [ref=e1311]:
+                  - cell "First (& Middle) Name ftyseo" [ref=e1312]:
+                    - generic [ref=e1313]:
+                      - generic [ref=e1314]: First (& Middle) Name
+                      - generic [ref=e1315]: ftyseo
+                  - cell "Last Name ltzbbp" [ref=e1316]:
+                    - generic [ref=e1317]:
+                      - generic [ref=e1318]: Last Name
+                      - generic [ref=e1319]: ltzbbp
+            - row "Id ATPValue   First (& Middle) Name ftyseo Last Name ltzbbp" [ref=e1321] [cursor=pointer]:
+              - generic [ref=e1322]:
+                - generic [ref=e1323]:
+                  - cell "Id ATPValue" [ref=e1325]:
+                    - generic [ref=e1326]:
+                      - generic [ref=e1327]: Id
+                      - generic [ref=e1328]: ATPValue
+                  - cell " " [ref=e1330]:
+                    - generic [ref=e1331]:
+                      - button "" [ref=e1332]:
+                        - generic [ref=e1333]: 
+                      - button "" [ref=e1334]:
+                        - generic [ref=e1335]: 
+                - generic [ref=e1336]:
+                  - cell "First (& Middle) Name ftyseo" [ref=e1337]:
+                    - generic [ref=e1338]:
+                      - generic [ref=e1339]: First (& Middle) Name
+                      - generic [ref=e1340]: ftyseo
+                  - cell "Last Name ltzbbp" [ref=e1341]:
+                    - generic [ref=e1342]:
+                      - generic [ref=e1343]: Last Name
+                      - generic [ref=e1344]: ltzbbp
+            - row "Id ATPValue   First (& Middle) Name ftyseo Last Name ltzbbp" [ref=e1346] [cursor=pointer]:
+              - generic [ref=e1347]:
+                - generic [ref=e1348]:
+                  - cell "Id ATPValue" [ref=e1350]:
+                    - generic [ref=e1351]:
+                      - generic [ref=e1352]: Id
+                      - generic [ref=e1353]: ATPValue
+                  - cell " " [ref=e1355]:
+                    - generic [ref=e1356]:
+                      - button "" [ref=e1357]:
+                        - generic [ref=e1358]: 
+                      - button "" [ref=e1359]:
+                        - generic [ref=e1360]: 
+                - generic [ref=e1361]:
+                  - cell "First (& Middle) Name ftyseo" [ref=e1362]:
+                    - generic [ref=e1363]:
+                      - generic [ref=e1364]: First (& Middle) Name
+                      - generic [ref=e1365]: ftyseo
+                  - cell "Last Name ltzbbp" [ref=e1366]:
+                    - generic [ref=e1367]:
+                      - generic [ref=e1368]: Last Name
+                      - generic [ref=e1369]: ltzbbp
+            - row "Id ATPValue   First (& Middle) Name ftyseo Last Name ltzbbp" [ref=e1371] [cursor=pointer]:
+              - generic [ref=e1372]:
+                - generic [ref=e1373]:
+                  - cell "Id ATPValue" [ref=e1375]:
+                    - generic [ref=e1376]:
+                      - generic [ref=e1377]: Id
+                      - generic [ref=e1378]: ATPValue
+                  - cell " " [ref=e1380]:
+                    - generic [ref=e1381]:
+                      - button "" [ref=e1382]:
+                        - generic [ref=e1383]: 
+                      - button "" [ref=e1384]:
+                        - generic [ref=e1385]: 
+                - generic [ref=e1386]:
+                  - cell "First (& Middle) Name ftyseo" [ref=e1387]:
+                    - generic [ref=e1388]:
+                      - generic [ref=e1389]: First (& Middle) Name
+                      - generic [ref=e1390]: ftyseo
+                  - cell "Last Name ltzbbp" [ref=e1391]:
+                    - generic [ref=e1392]:
+                      - generic [ref=e1393]: Last Name
+                      - generic [ref=e1394]: ltzbbp
+        - navigation "Pagination Navigation" [ref=e1396]:
+          - list [ref=e1397]:
+            - listitem [ref=e1398]:
+              - button "1" [ref=e1399] [cursor=pointer]
+            - listitem [ref=e1400]:
+              - button "2" [ref=e1401] [cursor=pointer]
+            - listitem [ref=e1402]:
+              - button "3" [ref=e1403] [cursor=pointer]
+            - listitem [ref=e1404]:
+              - button "4" [ref=e1405] [cursor=pointer]
+            - listitem [ref=e1406]:
+              - button "" [ref=e1407] [cursor=pointer]:
+                - generic [ref=e1408]: 
+    - generic [ref=e1409]:
+      - paragraph [ref=e1410]: OrangeHRM OS 5.8
+      - paragraph [ref=e1411]:
+        - text: © 2005 - 2026
+        - link "OrangeHRM, Inc" [ref=e1412] [cursor=pointer]:
+          - /url: http://www.orangehrm.com
+        - text: . All rights reserved.
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect, type Page, type ElementHandle } from '@playwright/test';
+  2  | 
+  3  | test('Hidden DropDown Test', async ({ page }: { page: Page }) => {
+  4  |     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList');
+  5  | 
+  6  |     //login first
+  7  |     const username: string | undefined = process.env.TEST_USERNAME;
+  8  |     const password: string | undefined = process.env.TEST_PASSWORD;
+  9  | 
+  10 |     await page.getByPlaceholder('Username').fill(username || '');
+  11 |     await page.getByPlaceholder('Password').fill(password || '');
+  12 | 
+  13 |     await page.locator("button[type='submit']").click();
+  14 | 
+  15 |     await expect(page.locator("//h6[normalize-space()='PIM']")).toBeVisible();
+  16 | 
+  17 |     //click on the Job Title dropdown
+> 18 |     await page.locator("//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[6]/div[1]/div[2]/div[1]/div[1]/div[2]/i[1]").click();
+     |                                                                                                                                                           ^ Error: locator.click: Test timeout of 120000ms exceeded.
+  19 | 
+  20 |     const options: ElementHandle[] = await page.$$("//div[@role='listbox']//span");
+  21 |     for (const option: ElementHandle of options) {
+  22 |         const jobTitle: string | null = await option.textContent();
+  23 |         if (jobTitle?.includes('QA Lead')) {
+  24 |             await option.click();
+  25 |             break;
+  26 |         }
+  27 |     }
+  28 | 
+  29 |     // click on employee status dropdown
+  30 |     await page.locator("//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/i[1]").click();
+  31 |     const employeeOptions: ElementHandle[] = await page.$$("//div[@role='listbox']//span");
+  32 | 
+  33 |     for (const option: ElementHandle of employeeOptions) {
+  34 |         const employeeStatus: string | null = await option.textContent();
+  35 |         if (employeeStatus?.includes('Full-Time Permanent')) {
+  36 |             await option.click()
+  37 |             break
+  38 |         }
+  39 |     }
+  40 | 
+  41 |     //sub unit dropdown
+  42 |     await page.locator("//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[7]/div[1]/div[2]/div[1]/div[1]/div[2]/i[1]").click();
+  43 |     const subUnit: ElementHandle[] = await page.$$("//div[@role='listbox']//span");
+  44 | 
+  45 |     for (const option: ElementHandle of subUnit) {
+  46 |         const subUnitPosition: string | null = await option.textContent();
+  47 |         if (subUnitPosition?.includes('Technical Support')) {
+  48 |             await option.click();
+  49 |             break;
+  50 |         }
+  51 |     }
+  52 | 
+  53 |     // include dropdown
+  54 |     await page.locator("//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[2]/i[1]").click();
+  55 |     const currentOrpast: ElementHandle[] = await page.$$("//div[@role='listbox']//span");
+  56 | 
+  57 |     for (const option: ElementHandle of currentOrpast) {
+  58 |         const employmentStatus: string | null = await option.textContent();
+  59 |         if (employmentStatus?.includes('Current and Past Employees')) {
+  60 |             await option.click();
+  61 |             break;
+  62 |         }
+  63 |     }
+  64 | 
+  65 |     // job title drop down again
+  66 |     await page.locator("//div[6]//div[1]//div[2]//div[1]//div[1]//div[2]//i[1]").click();
+  67 |     const employeeTitle: ElementHandle[] = await page.$$("//div[@role='listbox']//span");
+  68 | 
+  69 |     for (const option: ElementHandle of employeeTitle) {
+  70 |         const titleofemployee: string | null = await option.textContent();
+  71 |         if (titleofemployee?.includes('Support Specialist')) {
+  72 |             await option.click();
+  73 |             break;
+  74 |         }
+  75 |     }
+  76 |     
+  77 | })
+```
